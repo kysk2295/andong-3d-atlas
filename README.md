@@ -19,6 +19,114 @@
 
 > 이 저장소는 3D 웹 프로토타입만 담습니다. 데이터 분석·서식4·대시보드·보고서는 **[andong-datalab-2026](https://github.com/kysk2295/andong-datalab-2026)** 에 있습니다.
 
+## 화면으로 둘러보기
+
+아래 사진은 2026-09-30 배포 화면을 촬영한 것입니다(설명 영상과 같은 촬영본). 이후 버전에서 방문객·버스 등이 보강되었습니다.
+
+### 1. 3D 지도
+
+안동 시 전체 지형·하천·건물을 3D로 보고, 하회마을·원도심·월영교로 바로 날아갈 수 있습니다. 화면 오른쪽 위 버튼으로 낮·노을·밤을 바꾸고, 왼쪽 패널에서 관광주민증 혜택업체·릴레이 연결선·야간 팝업 층을 켜고 끕니다.
+
+<p>
+  <img src="docs/media/readme/map-aerial.jpg" width="49%" alt="안동 전경: 표고 위에 하천과 숲" />
+  <img src="docs/media/readme/map-hahoe.jpg" width="49%" alt="하회마을: 물돌이 지형과 마을 건물" />
+</p>
+
+| 안동 전경: 표고 위에 하천과 숲 | 하회마을: 물돌이 지형과 마을 건물 |
+|---|---|
+
+<p>
+  <img src="docs/media/readme/map-downtown.jpg" width="49%" alt="원도심: 낙동강 변 건물 밀집 지역" />
+  <img src="docs/media/readme/map-ui-day.jpg" width="49%" alt="지도 화면: 층 켜기·명소 정보·시간대 버튼" />
+</p>
+
+| 원도심: 낙동강 변 건물 밀집 지역 | 지도 화면: 층 켜기·명소 정보·시간대 버튼 |
+|---|---|
+
+<p>
+  <img src="docs/media/readme/map-ui-night.jpg" width="49%" alt="밤 지도: 원도심과 강변에 불이 켜짐" />
+  <img src="docs/media/readme/map-bridge-night.jpg" width="49%" alt="월영교 야경: 다리 조명이 수면 위로 이어짐" />
+</p>
+
+| 밤 지도: 원도심과 강변에 불이 켜짐 | 월영교 야경: 다리 조명이 수면 위로 이어짐 |
+|---|---|
+
+<p><img src="docs/media/readme/map-relay-entry.jpg" width="49%" alt="명소 정보에서 1인칭 체험으로 들어가기" /></p>
+
+명소 정보 카드와 대시보드의 **1인칭 체험** 버튼을 누르면 해당 장소의 릴레이 장면으로 바로 들어갑니다.
+
+### 2. 1인칭 릴레이: ① 원도심에서 식사
+
+<p>
+  <img src="docs/media/readme/relay-01-alley.jpg" width="49%" alt="찜닭골목을 걸어 이어드림 식당으로" />
+  <img src="docs/media/readme/relay-02-meal.jpg" width="49%" alt="자리에 앉아 찜닭을 집어 맛보기" />
+</p>
+
+| 찜닭골목을 걸어 이어드림 식당으로 | 자리에 앉아 찜닭을 집어 맛보기 |
+|---|---|
+
+<p>
+  <img src="docs/media/readme/relay-03-pay.jpg" width="49%" alt="카드로 결제 시연" />
+  <img src="docs/media/readme/relay-04-receipt.jpg" width="49%" alt="QR이 찍힌 영수증 받기" />
+</p>
+
+| 카드로 결제 시연 | QR이 찍힌 영수증 받기 |
+|---|---|
+
+
+### 3. 영수증 인증 → 체험 할인권
+
+<p>
+  <img src="docs/media/readme/relay-05-qr.jpg" width="49%" alt="영수증 QR을 휴대폰 화면 틀에 맞추기" />
+  <img src="docs/media/readme/relay-06-coupon.jpg" width="49%" alt="인증 후 체험 10% 할인권 발급(다음 체험 1회)" />
+</p>
+
+| 영수증 QR을 휴대폰 화면 틀에 맞추기 | 인증 후 체험 10% 할인권 발급(다음 체험 1회) |
+|---|---|
+
+
+할인권은 원도심 식사를 다음 전통 체험으로 잇는 장치입니다. 실제 서버 인증·결제는 일어나지 않으며, 금액은 시연 예시입니다.
+
+### 4. ② 손으로 하는 전통 체험
+
+<p>
+  <img src="docs/media/readme/relay-07-discount.jpg" width="49%" alt="공방 접수대에서 할인권 사용(−1,200원)" />
+  <img src="docs/media/readme/relay-08-mask.jpg" width="49%" alt="하회탈에 직접 색을 칠해 완성" />
+</p>
+
+| 공방 접수대에서 할인권 사용(−1,200원) | 하회탈에 직접 색을 칠해 완성 |
+|---|---|
+
+
+공방에서는 하회탈 색칠 외에 국화차 우리기, 전통주 재료·도구 조작도 할 수 있습니다.
+
+### 5. 저녁 이동 → ③ 월영교와 야간 팝업
+
+<p>
+  <img src="docs/media/readme/relay-09-ride.jpg" width="49%" alt="연결차량을 타고 월영교로(운영 제안)" />
+  <img src="docs/media/readme/relay-10-bridge.jpg" width="49%" alt="월영교에 도착하면 펼쳐지는 다리와 월영정" />
+</p>
+
+| 연결차량을 타고 월영교로(운영 제안) | 월영교에 도착하면 펼쳐지는 다리와 월영정 |
+|---|---|
+
+<p>
+  <img src="docs/media/readme/relay-11-walk.jpg" width="49%" alt="목교를 걸어 정자로" />
+  <img src="docs/media/readme/relay-12-popup.jpg" width="49%" alt="강변 밤마당: 9개 팝업 부스(야간 팝업 제안)" />
+</p>
+
+| 목교를 걸어 정자로 | 강변 밤마당: 9개 팝업 부스(야간 팝업 제안) |
+|---|---|
+
+<p>
+  <img src="docs/media/readme/relay-13-tea.jpg" width="49%" alt="부스에서 국화차를 받아 맛보기" />
+  <img src="docs/media/readme/relay-14-river.jpg" width="49%" alt="수면에 비친 월영정과 다리 조명" />
+</p>
+
+| 부스에서 국화차를 받아 맛보기 | 수면에 비친 월영정과 다리 조명 |
+|---|---|
+
+
 ## 어떤 것을 체험하나요?
 
 사업의 세 단계는 **원도심 소비 → 전통 체험 → 야간 체류**입니다. 영수증 인증은 식사에서 다음 체험으로 넘어가는 연결 과정입니다.
@@ -74,8 +182,8 @@ v1.30에서는 식당·공방·골목·월영교·팝업 방문객을 보강했�
 Node.js 22 환경을 기준으로 배포합니다. 테스트에는 Python 3도 필요합니다. 지도·재질·모델 등 실행용 자료는 저장소에 포함되어 있어 처음 실행할 때 전체 데이터를 다시 수집할 필요가 없습니다.
 
 ```bash
-git clone https://github.com/kysk2295/andong-datalab-2026.git
-cd andong-datalab-2026/andong-atlas
+git clone https://github.com/kysk2295/andong-3d-atlas.git
+cd andong-3d-atlas
 npm ci
 npm run dev -- --port 4174
 ```
@@ -99,7 +207,7 @@ npm run build
 npm run preview -- --port 4174
 ```
 
-`npm test`에는 상위 분석 폴더의 원자료와 앱 집계값 대조가 포함됩니다. 앱 폴더만 따로 복사하지 말고 저장소 전체를 내려받아 실행하세요. v1.31의 자동 검사 **239개가 통과**했으며, PC 1280×800 및 모바일 390×844에서 식당 출입, 공방 체험, 버스 승하차, 월영교 연결을 점검했습니다. [상세 검증 기록](QA.md)
+`npm test`에는 분석 원자료와 앱 집계값 대조가 포함됩니다. 이 검사까지 돌리려면 [분석 저장소](https://github.com/kysk2295/andong-datalab-2026)를 `git clone --recurse-submodules`로 받아 그 안의 `andong-atlas/`에서 실행하세요(이 저장소가 그 서브모듈입니다). v1.31의 자동 검사 **239개가 통과**했으며, PC 1280×800 및 모바일 390×844에서 식당 출입, 공방 체험, 버스 승하차, 월영교 연결을 점검했습니다. [상세 검증 기록](QA.md)
 
 독립 서버로 실행하려면 빌드 후 다음 명령을 사용합니다.
 
@@ -114,7 +222,7 @@ docker build -t andong-atlas .
 docker run --rm -p 8080:8080 andong-atlas
 ```
 
-현재 공개 서비스는 Railway에 배포되어 있습니다. 소스 업로드 범위는 이 앱 폴더로 지정해야 합니다. 상위 분석 저장소에는 앱 실행에 필요 없는 대용량 보고서와 촬영 원본이 있습니다.
+현재 공개 서비스는 Railway에 배포되어 있습니다. 이 저장소 루트가 곧 배포 범위입니다.
 
 ## 구성
 
