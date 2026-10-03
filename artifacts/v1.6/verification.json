@@ -1,0 +1,25 @@
+{
+  "version": "1.6.0",
+  "deployment": "44de4288-6139-4c01-be8c-4991e5c8bf87",
+  "testsPassed": 76,
+  "build": "passed",
+  "publicAssetsMatched": 12,
+  "publicConsoleErrors": 0,
+  "localConsoleErrors": 0,
+  "manualChecks": [
+    "reference overview and palace",
+    "Hahoe first/follow and arrival",
+    "Byeongsan mobile walk and arrival",
+    "Bongjeong building click",
+    "Dosan/Byeongsan/Bongjeong photo load and scope",
+    "scenario current/basic/expanded with facility jump",
+    "benefits before 0 and after 2, 3-minute walks",
+    "mobile 390x844 panel, photos, benefits and walk",
+    "public Hahoe walk, arrival and expanded scenario"
+  ],
+  "limitations": [
+    "Dosan and Bongjeong source approach paths only",
+    "No live bus feed or actual user reviews",
+    "Visual fidelity is not assigned a percentage"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "deployment_id": "d1f9acc7-04cd-46a2-b3eb-19fbf9248bdb",
+  "status": "SUCCESS",
+  "version": "1.18.0",
+  "url": "https://andong-atlas-production.up.railway.app/?layout=atlas&layers=relay",
+  "checked_at": "2026-09-29T12:49:09.637348+00:00",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "89b1edb7532d037f1c0d3d18d8d205ffd82300c85f2eebb715b24676c9fe3337"
+    },
+    {
+      "path": "data/tourism-map.json",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "dc53e763805a31b1a131d6f849e5ada514b85bd290907efc6dae0ee94beb69e5"
+    },
+    {
+      "path": "assets/preload-helper-BXl3LOEh.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6"
+    },
+    {
+      "path": "assets/tourism-map-ui-DCeI6jJy.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "9628f6d8320a06b66479b835f015ac58703ba7278ffa3092613087368c36dfd8"
+    },
+    {
+      "path": "assets/tourism-map-ui-Bz1Kx-mR.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d14030a28950595b39dd34ce422d0efc2707784552e274b82db3254604ea3b2a"
+    },
+    {
+      "path": "assets/main-Dn3hXRZA.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "642a4e148c59f8abf74ed8b7c6e201adcd3eb6edd79131249c3e62f7d1c394db"
+    },
+    {
+      "path": "assets/scene-i0DbIs_h.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "135eb86bbdd46895f9af3701ca716c464d05314f6bdd5ad0887f9827c80351c5"
+    },
+    {
+      "path": "assets/relay-ui-BTXjuQgz.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "206806d85bb90cbfb00a81170af2425b6c38bd22cfb10e940efa23bfe9efd3f5"
+    },
+    {
+      "path": "assets/relay-ui-D5TTeXMZ.css",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "dc0725c27a6bf670dc9f5c3ae2476159db47b6279cdbc31b411d81e7668191e0"
+    },
+    {
+      "path": "assets/BufferGeometryUtils-D5d_e3qQ.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "d47d3d6c5c9f0acfbf0767a40e802fca849f6a8ea546436e8a1ec78920fd054f"
+    },
+    {
+      "path": "assets/main-I8izOqBF.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "9f6ff911a984f7154c4713407e39d109429dc6bc88c0dfc57d8e23d0dda889e5"
+    },
+    {
+      "path": "assets/index-L1bZk-JP.js",
+      "status": 200,
+      "matches_local": true,
+      "sha256": "82a081640379c519ccee01a4d0826f5da405418202e66453b587f91cc01d2870"
+    }
+  ],
+  "browser": {
+    "both_switches_visible": true,
+    "relay_route_enabled": true,
+    "console_errors": [],
+    "screenshot": "railway-map.png"
+  }
+}

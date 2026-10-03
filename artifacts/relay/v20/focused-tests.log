@@ -1,0 +1,17 @@
+✔ photographic twig UVs stay in the intended atlas island, without non-finite vertices (3.154083ms)
+✔ forest stays batched as density increases, instead of one draw call per twig (184.881333ms)
+✔ all menu portions are finite, human scale and still reachable by the meal raycaster (147.857208ms)
+✔ water disposes its owned reflection target and material when its cached scene is evicted (13.731875ms)
+✔ a pointer bite requires movement into the mouth, while a stationary click returns the food (0.455042ms)
+✔ small teacups keep their inner floor below the liquid and rim (5.334875ms)
+✔ river motion is frame-rate independent, freezes in place, and resumes without jumping (50.959417ms)
+✔ floating objects follow continuous river heights and the same local slope as the water (4.422ms)
+✔ river wave grid stays bounded and includes wave height in culling bounds (22.361833ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 680.200792

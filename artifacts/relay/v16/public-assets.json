@@ -1,0 +1,21 @@
+{
+  "entry": "/assets/index-DKjqUZ4Z.js",
+  "matchesCurrentEntry": true,
+  "assets": [
+    {
+      "path": "assets/index-DKjqUZ4Z.js",
+      "matches": true,
+      "sha256": "443745e3d17f1ced631dcad842e3903f6216ac7365893a7845bd0ef82159f3b9"
+    },
+    {
+      "path": "assets/relay-ui-JqWQw29x.js",
+      "matches": true,
+      "sha256": "d8d53a83f5bd91f12fc52c0a812ce9b488e0a6295eeb2a5e631ba19d685090d0"
+    },
+    {
+      "path": "assets/relay-ui-ZBn8qWwi.css",
+      "matches": true,
+      "sha256": "4165011b0f7f8f39d225382c680cb6b5310616d66b7fc675f5f15b7594431578"
+    }
+  ]
+}

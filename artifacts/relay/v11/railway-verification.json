@@ -1,0 +1,48 @@
+{
+  "version": "1.19.0",
+  "deployment": "73bb0ec7-6b44-40fe-bd65-911fc35d024d",
+  "checks": [
+    {
+      "path": "index.html",
+      "bytes": 19989,
+      "sha256": "6e014acfa89328675fb6510af8afa862096a5a1edc241268981335205c36682a",
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/relay-ui-DPBt_eTV.js",
+      "bytes": 653464,
+      "sha256": "c36e1e6c0cddc90ef43f37591a6aee81014c63ce5337623fde9ca182f995dd45",
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/relay-ui-BmrXC4z5.css",
+      "bytes": 71005,
+      "sha256": "c79452b4d7d84d6ea164f3589b0f05d8e2fb686e0ef63709712426f10a6b6c27",
+      "matchesBuild": true
+    },
+    {
+      "path": "data/relay-materials.json",
+      "bytes": 16240,
+      "sha256": "96236c8ac7e8fe69144ffc37d28fa881f04d12b5f0c4d21b6d55290c59d958b8",
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/relay/materials/square_tiles_diffuse.jpg",
+      "bytes": 992814,
+      "sha256": "4112faaa94887f6a1d940ebadcc96d9fc1c7aa4ba16f0a236ffe0363e75d3610",
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/relay/materials/square_tiles_nor_gl.jpg",
+      "bytes": 799559,
+      "sha256": "eaae39f88374f97e831c1fb24b2fa4c4c3dcdd64e2a706b337a0f8f37fbd45ce",
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/relay/materials/square_tiles_rough.jpg",
+      "bytes": 444960,
+      "sha256": "18587f70fb591f6b02d0d25ec5924a0d19fda186547dfaa78bbd2df3392cd53e",
+      "matchesBuild": true
+    }
+  ]
+}

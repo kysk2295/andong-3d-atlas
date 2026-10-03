@@ -1,0 +1,68 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matches": true,
+    "bytes": 18195
+  },
+  {
+    "path": "assets/preload-helper-BXl3LOEh.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 1110
+  },
+  {
+    "path": "assets/index-DbYP_v2j.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 1948
+  },
+  {
+    "path": "assets/scene-BNbsYQP7.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 135967
+  },
+  {
+    "path": "assets/tourism-map-ui-Bq0JAMCH.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 594067
+  },
+  {
+    "path": "assets/BufferGeometryUtils-BX5XnFUn.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 4864
+  },
+  {
+    "path": "assets/main-DtO1L0g2.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 455144
+  },
+  {
+    "path": "assets/relay-ui-Ce9n3Hc8.js",
+    "status": 200,
+    "matches": true,
+    "bytes": 673167
+  },
+  {
+    "path": "assets/tourism-map-ui-DCeI6jJy.css",
+    "status": 200,
+    "matches": true,
+    "bytes": 8175
+  },
+  {
+    "path": "assets/main-BquLUYwE.css",
+    "status": 200,
+    "matches": true,
+    "bytes": 82956
+  },
+  {
+    "path": "assets/relay-ui-BqlhsDLV.css",
+    "status": 200,
+    "matches": true,
+    "bytes": 73789
+  }
+]

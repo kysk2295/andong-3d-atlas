@@ -1,0 +1,26 @@
+{
+  "water": {
+    "changed": 13624,
+    "pixels": 14950,
+    "mean_delta": 2.8800222965440354
+  },
+  "bank": {
+    "changed": 0,
+    "pixels": 3600,
+    "mean_delta": 0.0
+  },
+  "paused": {
+    "changed": 0,
+    "pixels": 14950
+  },
+  "overview_water": {
+    "changed": 299,
+    "pixels": 540,
+    "mean_delta": 1.0530864197530863
+  },
+  "overview_land": {
+    "changed": 0,
+    "pixels": 625,
+    "mean_delta": 0.0
+  }
+}

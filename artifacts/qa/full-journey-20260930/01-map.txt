@@ -1,0 +1,222 @@
+- main "안동 전역 인터랙티브 3D 지도"
+- generic "지도 위 랜드마크"
+- banner:
+  - generic: 대한민국 (SOUTH KOREA) · 3D 지도 (ATLAS)
+  - heading "안동 ANDONG" [level=1]:
+    - text: 안동
+    - generic: ANDONG
+  - button "탐색 패널 접기" [expanded]:
+  - button "어두운 화면으로 전환":
+- region "풍경 설정":
+  - button "낮 (Day)" [pressed]:
+    - text: 낮
+    - generic: (Day)
+  - button "노을 (Sunset)":
+    - text: 노을
+    - generic: (Sunset)
+  - button "야경 (Night)":
+    - text: 야경
+    - generic: (Night)
+  - button "비 (Rain)":
+    - text: 비
+    - generic: (Rain)
+  - button "눈 (Snow)":
+    - text: 눈
+    - generic: (Snow)
+  - button "지도 설명과 데이터 출처":
+  - text: 나무 계절 (Tree season)
+  - combobox "나무 계절":
+    - generic: 여름 · 녹음 (Summer)
+- complementary "안동 탐색":
+  - heading "안동 탐색 (Explore Andong)" [level=2]
+  - navigation "탐색 방식":
+    - button "지도 탐색" [pressed]
+    - button "코스 여행"
+    - button "사진 탐색"
+  - tablist "탐색 유형":
+    - tab "도시" [selected]
+    - tab "이어드림"
+    - tab "여행"
+  - button "안동 전역"
+  - button "도심 전체"
+  - button "원도심 상세"
+  - button "월영교 상세"
+  - region "혜택업체와 릴레이 지도 설정":
+    - group "지도에 표시할 정보":
+      - switch "관광주민증 혜택업체"
+      - generic: 관광주민증 혜택업체
+      - switch "릴레이 1·2·3단계 연결선" [checked]
+      - generic: 릴레이 1·2·3단계 연결선
+      - switch "야간 팝업 부스 9"
+      - generic: 야간 팝업 부스
+      - generic: "9"
+    - button "혜택업체 목록"
+    - button "표시한 위치 전체 보기"
+    - generic "릴레이 단계":
+      - button "1 식음·체험 릴레이":
+        - generic: "1"
+        - generic: 식음·체험 릴레이
+      - button "2 저녁 이동 연결":
+        - generic: "2"
+        - generic: 저녁 이동 연결
+      - button "3 월영교 야간 체류":
+        - generic: "3"
+        - generic: 월영교 야간 체류
+  - tabpanel "도시":
+    - region "릴레이 체험 바로가기":
+      - link "직접 걸으며 즐기는 안동 1인칭 릴레이 체험 처음 시작하거나 내 여행 이어가기":
+        - /url: "?experience=relay&play=1"
+        - text: 직접 걸으며 즐기는 안동
+        - strong:
+          - text: 1인칭 릴레이 체험
+          - generic: ↗
+        - text: 처음 시작하거나 내 여행 이어가기
+      - link "찜닭골목":
+        - /url: "?experience=relay&visit=market&at=market"
+        - text: 찜닭골목
+        - generic: ↗
+      - link "전통 체험":
+        - /url: "?experience=relay&visit=workshop&at=workshop"
+        - text: 전통 체험
+        - generic: ↗
+      - link "월영교":
+        - /url: "?experience=relay&visit=bridge&at=bridge"
+        - text: 월영교
+        - generic: ↗
+      - link "야간 팝업":
+        - /url: "?experience=relay&visit=popup&at=popup"
+        - text: 야간 팝업
+        - generic: ↗
+    - button "실제 사진·거리 둘러보기"
+    - text: 안동 24개 읍면동 (Districts)
+    - combobox "안동 24개 읍면동 (Districts)":
+      - generic: 읍면동 선택 (Select district)
+    - generic: 랜드마크 (Landmarks)
+    - generic: 11곳 (places)
+    - button "사람·차량 가까이"
+    - button "웅부공원 산책"
+    - button "월영교 수상 풍경"
+    - button "풍경 움직임 켜짐" [pressed]
+    - paragraph: 차량·배·창문은 미니어처 연출입니다.
+    - button "코스 여행 · 혜택 비교"
+    - navigation "랜드마크 바로 가기":
+      - button "01 안동역 (Andong Station)":
+        - generic: "01"
+        - text: 안동역
+        - generic: (Andong Station)
+      - link "안동역 릴레이 체험":
+        - /url: "?experience=relay&visit=market&at=market"
+        - text: 체험 ↗
+      - button "02 안동구시장 · 찜닭골목 (Old Market · Jjimdak Alley)":
+        - generic: "02"
+        - text: 안동구시장 · 찜닭골목
+        - generic: (Old Market · Jjimdak Alley)
+      - link "안동구시장 · 찜닭골목 릴레이 체험":
+        - /url: "?experience=relay&visit=market&at=market"
+        - text: 체험 ↗
+      - button "03 웅부공원 (Ungbu Park)":
+        - generic: "03"
+        - text: 웅부공원
+        - generic: (Ungbu Park)
+      - link "웅부공원 릴레이 체험":
+        - /url: "?experience=relay&visit=market&at=market"
+        - text: 체험 ↗
+      - button "04 월영교 (Woryeonggyo Bridge)":
+        - generic: "04"
+        - text: 월영교
+        - generic: (Woryeonggyo Bridge)
+      - link "월영교 릴레이 체험":
+        - /url: "?experience=relay&visit=bridge&at=bridge"
+        - text: 체험 ↗
+      - button "05 안동민속마을 (Andong Folk Village)":
+        - generic: "05"
+        - text: 안동민속마을
+        - generic: (Andong Folk Village)
+      - link "안동민속마을 릴레이 체험":
+        - /url: "?experience=relay&visit=bridge&at=bridge"
+        - text: 체험 ↗
+      - button "06 안동민속박물관 (Andong Folk Museum)":
+        - generic: "06"
+        - text: 안동민속박물관
+        - generic: (Andong Folk Museum)
+      - link "안동민속박물관 릴레이 체험":
+        - /url: "?experience=relay&play=1"
+        - text: 체험 ↗
+      - button "07 하회마을 입구 (Hahoe Village Entrance)":
+        - generic: "07"
+        - text: 하회마을 입구
+        - generic: (Hahoe Village Entrance)
+      - link "하회마을 입구 릴레이 체험":
+        - /url: "?experience=relay&visit=workshop&at=workshop&program=mask"
+        - text: 체험 ↗
+      - button "08 부용대 (Buyongdae Cliff)":
+        - generic: "08"
+        - text: 부용대
+        - generic: (Buyongdae Cliff)
+      - link "부용대 릴레이 체험":
+        - /url: "?experience=relay&play=1"
+        - text: 체험 ↗
+      - button "09 병산서원 입구 (Byeongsan Seowon Entrance)":
+        - generic: "09"
+        - text: 병산서원 입구
+        - generic: (Byeongsan Seowon Entrance)
+      - link "병산서원 입구 릴레이 체험":
+        - /url: "?experience=relay&visit=workshop&at=workshop&program=mask"
+        - text: 체험 ↗
+      - button "10 도산서원 (Dosan Seowon)":
+        - generic: "10"
+        - text: 도산서원
+        - generic: (Dosan Seowon)
+      - link "도산서원 릴레이 체험":
+        - /url: "?experience=relay&visit=workshop&at=workshop&program=mask"
+        - text: 체험 ↗
+      - button "11 봉정사 (Bongjeongsa Temple)":
+        - generic: "11"
+        - text: 봉정사
+        - generic: (Bongjeongsa Temple)
+      - link "봉정사 릴레이 체험":
+        - /url: "?experience=relay&visit=workshop&at=workshop&program=mask"
+        - text: 체험 ↗
+    - text: 행정경계 (Borders)
+    - checkbox "행정경계 (Borders) 표시"
+    - generic: 표시
+- button "북쪽을 위로 정렬":
+- button "확대":
+- button "축소":
+- generic: 미니어처 도시 (City in miniature)
+- generic: ANDONG
+- heading "하회마을 · 마을 골목 가까이" [level=2]
+- paragraph: 공개 지도에 수록된 골목·담장·건물과 방문객 풍경
+- link "하회마을 입구에서 전통 체험 릴레이":
+  - /url: "?experience=relay&visit=workshop&at=workshop&program=mask"
+  - strong:
+    - text: 전통 체험 릴레이
+    - generic: ↗
+  - generic: 원도심 제안 공방 · 탈 꾸미기·국화차·전통주
+- generic: 외관·사람은 미니어처
+- button "마을 골목 가까이" [active]
+- button "삼신당 주변"
+- button "만송정 숲"
+- button "명소·골목 탐색"
+- navigation "지도 조작":
+  - link "릴레이 체험 ↗":
+    - /url: "?experience=relay&play=1"
+  - button "안동 전체 (Overview)":
+    - text: 안동 전체
+    - generic: (Overview)
+  - button "자동 비행 (Auto tour)":
+    - text: 자동 비행
+    - generic: (Auto tour)
+  - button "평면 보기 (2D view)":
+    - text: 평면 보기
+    - generic: (2D view)
+  - button "지명 (Labels)" [pressed]:
+    - text: 지명
+    - generic: (Labels)
+  - button "전체 화면 (Fullscreen)":
+    - text: 전체 화면
+    - generic: (Fullscreen)
+- text: 안동의 실제 모습
+- group "관광지 안의 건물과 명소"
+- text: →
+- group "관광주민증 혜택업체와 릴레이 단계 지도 표식"

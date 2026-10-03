@@ -1,0 +1,18 @@
+✔ diners sit at chair height with feet on the floor and hands over the table (52.323292ms)
+✔ walkers retain raised-deck foot height and reduced motion freezes their poses (21.5365ms)
+✔ same full-sized bus is reachable from the pavement at both stops (118.9395ms)
+✔ open front door has a real opening at knee, waist and head height (112.146625ms)
+✔ passenger cabin has metre-scale proportions, grounded occupants and unobstructed eyes (271.691042ms)
+✔ passengers and straps animate without drifting, reduced motion stays still, and bell resets per ride (101.826625ms)
+✔ map height compression preserves cabin proportions and metre-scale eye placement through a turn (83.106542ms)
+✔ batching preserves instancing, reflective water callbacks and interactive parts (0.606125ms)
+✔ map bus speed follows road distance instead of flying kilometres in seconds (0.260708ms)
+✔ alighting follows the aisle to the front door with clear standing eye space (174.402ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 767.982708

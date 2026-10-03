@@ -1,0 +1,5 @@
+Publish Andong 3D Atlas with relay experience and demo videos
+
+Add the v1.30 web app, prepared map and visual assets, and 230 behavioral/data checks. Document the first-person dining, QR, craft, transit, bridge, and night-market flow with live links and current screenshots.
+
+Attach compressed 76-second site overview and 72-second relay walkthrough videos with an animated README preview and asset credits. Keep local captures, build output, dependencies, and environment files out of Git.

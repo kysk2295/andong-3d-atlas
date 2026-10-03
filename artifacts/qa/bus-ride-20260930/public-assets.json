@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "index-B4On4UYE.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "120604921018aec8e8b78313ccfe06636d76ca1009391ba164553bd760f9d8fb"
+  },
+  {
+    "asset": "main-Cpm1Wm9w.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "bc76d1f37f4d740396d24c57e247e37b2d830181a19903b3a39656727c2ddbf0"
+  },
+  {
+    "asset": "relay-ui-D4UzwG_T.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "0d6cb6ace1af0cefbb569d3077ea11777a7f3a3894e5ab2089a3394ed2ba9e91"
+  }
+]

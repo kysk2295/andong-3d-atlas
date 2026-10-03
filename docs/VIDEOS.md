@@ -6,7 +6,7 @@
 
 [![사이트 소개 영상](media/overview-poster.jpg)](media/andong-overview.mp4)
 
-**[MP4 재생](media/andong-overview.mp4)** · **[다운로드](https://raw.githubusercontent.com/kysk2295/andong-datalab-2026/main/andong-atlas/docs/media/andong-overview.mp4)**
+**[MP4 재생](media/andong-overview.mp4)** · **[다운로드](https://raw.githubusercontent.com/kysk2295/andong-3d-atlas/main/docs/media/andong-overview.mp4)**
 
 3D 안동 전경에서 하회마을·원도심으로 들어가고, 사이트 조작과 낮·밤 전환, 월영교 야경 및 1인칭 체험을 소개합니다. 실제 웹 3D 화면을 촬영해 편집했으며 한국어 자막과 배경음이 포함됩니다.
 
@@ -14,7 +14,7 @@
 
 [![릴레이 체험 영상](media/relay-poster.jpg)](media/andong-relay.mp4)
 
-**[MP4 재생](media/andong-relay.mp4)** · **[다운로드](https://raw.githubusercontent.com/kysk2295/andong-datalab-2026/main/andong-atlas/docs/media/andong-relay.mp4)**
+**[MP4 재생](media/andong-relay.mp4)** · **[다운로드](https://raw.githubusercontent.com/kysk2295/andong-3d-atlas/main/docs/media/andong-relay.mp4)**
 
 찜닭골목과 식사, 결제·영수증, QR 인증, 다음 체험 할인, 전통 공방, 저녁 이동과 월영교·팝업을 잇는 사용자 흐름을 보여줍니다. 인증·결제·혜택·연결차량·팝업 운영은 기획 시연입니다.
 

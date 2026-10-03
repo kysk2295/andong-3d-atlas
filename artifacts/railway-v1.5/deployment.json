@@ -1,0 +1,59 @@
+[
+  {
+    "id": "68a1c4bc-87ce-45b1-96b5-828d25e9af65",
+    "status": "SUCCESS",
+    "createdAt": "2026-09-28T22:59:57.193Z",
+    "meta": {
+      "buildOnly": false,
+      "cliAgentSessionId": "01a0e776-5183-7141-adb5-0d4eb93630ca",
+      "cliCaller": "codex",
+      "cliMessage": "v1.5: map-first dashboard, regional heritage details, journey modes, GIS symbols and simplified preview",
+      "fileServiceManifest": {},
+      "imageDigest": "sha256:16927231e77815cb763c83044ccf7486a456b01b4afd72bf1a0ba37f9eb6cc27",
+      "logsV2": true,
+      "nixpacksProviders": [],
+      "propertyFileMapping": {},
+      "reason": "deploy",
+      "rootDirectory": null,
+      "runtime": "V2",
+      "serviceManifest": {
+        "build": {
+          "buildCommand": null,
+          "buildEnvironment": "V3",
+          "builder": "DOCKERFILE",
+          "dockerfilePath": "/Dockerfile",
+          "nixpacksConfigPath": null,
+          "nixpacksPlan": null,
+          "watchPatterns": []
+        },
+        "deploy": {
+          "cronSchedule": null,
+          "drainingSeconds": null,
+          "healthcheckPath": null,
+          "healthcheckTimeout": null,
+          "ipv6EgressEnabled": false,
+          "limitOverride": null,
+          "multiRegionConfig": {
+            "europe-west4-drams3a": {
+              "numReplicas": 1
+            }
+          },
+          "numReplicas": 1,
+          "overlapSeconds": null,
+          "preDeployCommand": null,
+          "preDeployTimeoutSeconds": null,
+          "region": null,
+          "registryCredentials": null,
+          "requiredMountPath": null,
+          "restartPolicyMaxRetries": 10,
+          "restartPolicyType": "ON_FAILURE",
+          "runtime": "V2",
+          "sleepApplication": false,
+          "startCommand": null,
+          "useLegacyStacker": false
+        }
+      },
+      "volumeMounts": []
+    }
+  }
+]

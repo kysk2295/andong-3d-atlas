@@ -1,0 +1,67 @@
+
+> andong-3d-atlas@1.5.0 test
+> node --test tests/*.test.mjs
+
+✔ projection preserves geographic positions (6.180125ms)
+✔ terrain inventory and all 24 districts are valid (4.115334ms)
+✔ closing time does not imply known opening time (0.298625ms)
+✔ last bus boundary is inclusive and subsequent time has none (1.510459ms)
+✔ scenarios exactly match existing analysis (1.965958ms)
+✔ manifest counts equal downloaded vector features (238.553417ms)
+✔ basic and expanded outcomes retain the latest source and resident effects stay separate (2.773625ms)
+✔ animated vehicle path uses downloaded road segments (26.992291ms)
+✔ height sampling follows the rendered terrain triangles (0.200459ms)
+✔ water animation stays inside mapped water and honors reduced motion (243.914625ms)
+✔ district preserves raw roads, closed footprints, provenance and dense terrain (10.279625ms)
+✔ supplementary building research retains geographic coordinates, estimated height and license (122.456792ms)
+✔ traffic continues at connected nodes, respects one-way and stops at an unconnected end (0.92025ms)
+✔ camera sightline clears an intervening bank when focusing river boats (0.118167ms)
+✔ batched building mesh preserves shell dimensions and outward faces (1.610708ms)
+✔ proposal platform clears sloped terrain and reconnects its skirt after elevation changes (1.142084ms)
+✔ bridge model follows the downloaded crossing endpoints (19.866625ms)
+✔ building foundations meet sloping terrain along outer and courtyard edges (0.568125ms)
+✔ building colors are stable, varied, and preserve explicit source colors (0.219375ms)
+✔ footprint clearance detects walls but leaves courtyards open (0.629125ms)
+✔ pedestrians turn back continuously and avoid building-obstructed walkway spans (0.40725ms)
+✔ public park boundaries and mapped trees retain local geometry and provenance (9.085083ms)
+✔ a distant long cycleway does not suppress an unmapped park interior layout (13.745667ms)
+✔ fleet waits behind a leading vehicle and resumes without crossing it (0.923417ms)
+✔ bridge walkers share the elevated deck instead of following the water terrain (0.744375ms)
+✔ tree crown clearance protects the whole road corridor, not just its centreline (0.306542ms)
+✔ road triangles conform to terrain ridges even between the road corner samples (0.423917ms)
+✔ KTX exit uses the mapped station entrance and a nearby station bus stop (77.556042ms)
+✔ journeys connect all four origins to the bridge on road graph (17.129416ms)
+✔ current plan has no proposed workshop or popup; both plans retain stages (0.449416ms)
+✔ return railway deadline subtracts walking, waiting and station buffer (0.397625ms)
+✔ 112 return selects latest feasible departure inclusively (0.207917ms)
+✔ invalid and previous-day times are rejected (0.144542ms)
+✔ missed return bus does not animate an invented later departure (3.803917ms)
+✔ return mileage includes the route to the station (0.219375ms)
+✔ benefit hours, deduplication and underlying resident benefit are independent (0.133333ms)
+✔ placement measures reachable sites, not money or straight-line coverage (0.24775ms)
+✔ unreachable route remains absent rather than a straight-line fallback (3.42625ms)
+✔ source place records have unique IDs and uncertain prices stay null (0.1255ms)
+✔ camera corridor avoids an obstructing shell continuously and rejects impossible corridors (4.037584ms)
+✔ default road journey can render at eye level without passing through mapped buildings (265.569792ms)
+✔ bridge supports and open pavilion do not block the walking corridor (6.111708ms)
+✔ bridge deck follows all bends in the downloaded walking route (31.614375ms)
+✔ proposed return connection obeys its evening operating window (0.105292ms)
+✔ station course contains walking to a real stop, waiting, boarding and walking after alighting (0.23625ms)
+✔ public photographs retain attribution, source, license and truthful date (3.5615ms)
+✔ photo associations are catalogue identities and do not give proposed venues real photographs (0.334541ms)
+✔ Roadview links use latitude before longitude and correctly escape place names (0.1405ms)
+✔ Core has priority and every named outer destination resolves to its own detail region (1.126541ms)
+✔ Every regional package has consistent elevation, compressed parity, and connected source geometry (568.703459ms)
+✔ Regional density stays within mobile budgets rather than copying metropolitan traffic totals (0.197041ms)
+✔ Heritage roof preserves a courtyard hole and does not project beyond its footprint (1.830083ms)
+✔ Flat roofs and heritage roofs can share one geometry batch (0.484583ms)
+✔ A rural region with no mapped park trees can load and change seasons (1.694167ms)
+✔ Display terraces reduce unresolved building slopes without changing raw elevation (0.364334ms)
+ℹ tests 55
+ℹ suites 0
+ℹ pass 55
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1041.705417

@@ -1,0 +1,12 @@
+✔ station rail joints share levels, clear the terrain, and bound the displayed grade (24.126583ms)
+✔ elevated railways have a solid deck and piers that reach terrain instead of floating ribbons (85.841791ms)
+✔ ground beds meet the terrain and underground or duplicate segments do not produce invalid geometry (1.394708ms)
+✔ train wheels sit on rails and coaches pitch with the rail profile (11.357041ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 606.50025

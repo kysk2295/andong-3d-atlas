@@ -1,0 +1,33 @@
+
+> andong-3d-atlas@1.14.0 prebuild
+> node scripts/compress-data.mjs
+
+map: 19.08 MB → 4.34 MB
+district: 1.36 MB → 0.23 MB
+buildings: 19.91 MB → 2.52 MB
+journey: 2.36 MB → 0.53 MB
+
+> andong-3d-atlas@1.14.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1671 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               19.99 kB │ gzip:   6.64 kB
+dist/assets/relay-ui-DBzfK4xE.css             55.83 kB │ gzip:  12.38 kB
+dist/assets/main-Dn3hXRZA.css                 83.20 kB │ gzip:  16.02 kB
+dist/assets/preload-helper-BXl3LOEh.js         1.11 kB │ gzip:   0.65 kB
+dist/assets/index-5ZhzsohX.js                  1.90 kB │ gzip:   1.05 kB
+dist/assets/scene-ChjkbX8F.js                136.34 kB │ gzip:  38.97 kB
+dist/assets/three.core-ChVleZs7.js           254.49 kB │ gzip:  71.20 kB
+dist/assets/BufferGeometryUtils-BsfT1Dom.js  329.15 kB │ gzip:  79.31 kB
+dist/assets/main-BISd4b-x.js                 436.72 kB │ gzip: 122.18 kB
+dist/assets/relay-ui-C1O3bAEs.js             622.53 kB │ gzip: 215.40 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.22s

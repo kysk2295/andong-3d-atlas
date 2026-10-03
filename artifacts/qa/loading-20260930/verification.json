@@ -1,0 +1,35 @@
+{
+  "version": "1.31.0",
+  "commit": "5fedb5f",
+  "tests": {
+    "passed": 239,
+    "failed": 0
+  },
+  "localObservedLoadMs": {
+    "mapAfterRetry": 2692,
+    "popup": 559,
+    "delayedTexturesMeal": 8266,
+    "bootstrapAfterRetry": 496
+  },
+  "faults": {
+    "stalledJSON": "retry after 25s; connection aborted; recovery confirmed",
+    "missingBootstrap": "recovery at 35s; retry confirmed",
+    "delayedTextures": "entry before completion; full-resolution materials appeared later",
+    "duplicateRecoveryPanels": 0
+  },
+  "sceneCache": {
+    "mobileObserved": 1,
+    "desktopObserved": 2
+  },
+  "tourismMapBytes": {
+    "raw": 1877549,
+    "gzip": 389159
+  },
+  "production": {
+    "deployment": "1757796e-ebfb-4432-8692-a713e5a8cbda",
+    "status": "SUCCESS",
+    "mapLoadMs": 3316,
+    "popupLoadMs": 694,
+    "consoleErrors": []
+  }
+}

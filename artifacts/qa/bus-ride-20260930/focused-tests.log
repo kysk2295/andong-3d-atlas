@@ -1,0 +1,18 @@
+✔ audio is gesture-lazy, quiet when muted or paused, and reusable without duplicate loops (1.034708ms)
+✔ only ground distance produces steps; jumps and camera teleports do not (0.163916ms)
+✔ an unavailable audio device does not interrupt the game (0.082458ms)
+✔ bus engine obeys mute and pause and stops when leaving the vehicle (0.114417ms)
+✔ passenger cabin has metre-scale proportions, grounded occupants and unobstructed eyes (228.799375ms)
+✔ passengers and straps animate without drifting, reduced motion stays still, and bell resets per ride (92.827084ms)
+✔ map height compression preserves cabin proportions and metre-scale eye placement through a turn (83.070958ms)
+✔ batching preserves instancing, reflective water callbacks and interactive parts (0.391709ms)
+✔ map bus speed follows road distance instead of flying kilometres in seconds (0.184458ms)
+✔ alighting follows the aisle to the front door with clear standing eye space (168.668542ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 698.726417

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "3e611bce-bda3-4e6b-afdd-d04aec577f8b",
+    "status": "SUCCESS",
+    "createdAt": "2026-09-29T13:18:45.749Z",
+    "meta": {
+      "buildOnly": false,
+      "cliAgentSessionId": "01a0ea21-9fd7-78f2-aa4e-d49cc56415e4",
+      "cliCaller": "codex",
+      "cliMessage": "v1.19.1: remove the Trails exploration tab and its controls",
+      "fileServiceManifest": {},
+      "imageDigest": "sha256:13096ca00f2575bb6d7b4ecfd673b375993f7810d70495cfbc964c3980766375",
+      "logsV2": true,
+      "nixpacksProviders": [],
+      "propertyFileMapping": {},
+      "reason": "deploy",
+      "rootDirectory": null,
+      "runtime": "V2",
+      "serviceManifest": {
+        "build": {
+          "buildCommand": null,
+          "buildEnvironment": "V3",
+          "builder": "DOCKERFILE",
+          "dockerfilePath": "/Dockerfile",
+          "nixpacksConfigPath": null,
+          "nixpacksPlan": null,
+          "watchPatterns": []
+        },
+        "deploy": {
+          "cronSchedule": null,
+          "drainingSeconds": null,
+          "healthcheckPath": null,
+          "healthcheckTimeout": null,
+          "ipv6EgressEnabled": false,
+          "limitOverride": null,
+          "multiRegionConfig": {
+            "europe-west4-drams3a": {
+              "numReplicas": 1
+            }
+          },
+          "numReplicas": 1,
+          "overlapSeconds": null,
+          "preDeployCommand": null,
+          "preDeployTimeoutSeconds": null,
+          "region": null,
+          "registryCredentials": null,
+          "requiredMountPath": null,
+          "restartPolicyMaxRetries": 10,
+          "restartPolicyType": "ON_FAILURE",
+          "runtime": "V2",
+          "sleepApplication": false,
+          "startCommand": null,
+          "useLegacyStacker": false
+        }
+      },
+      "volumeMounts": []
+    }
+  }
+]

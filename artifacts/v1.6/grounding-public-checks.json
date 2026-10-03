@@ -1,0 +1,27 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "match": true
+  },
+  {
+    "path": "design-preview/index.html",
+    "status": 200,
+    "match": true
+  },
+  {
+    "path": "assets/index-B3GGxC14.css",
+    "status": 200,
+    "match": true
+  },
+  {
+    "path": "assets/index-DFfG7A-S.js",
+    "status": 200,
+    "match": true
+  },
+  {
+    "path": "assets/scene-5_hNw3q0.js",
+    "status": 200,
+    "match": true
+  }
+]

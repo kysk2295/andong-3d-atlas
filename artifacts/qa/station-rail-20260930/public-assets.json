@@ -1,0 +1,21 @@
+{
+  "deployment": "33212291-b484-43c3-9a13-982921f04439",
+  "status": 200,
+  "assets": [
+    {
+      "path": "/assets/index-ZBqr5BvD.js",
+      "matches_local": true,
+      "sha256": "cd87cfc6121e02b8f75f949986b8668d1dce392c7866d26d83e450c40b116513"
+    },
+    {
+      "path": "/assets/preload-helper-BXl3LOEh.js",
+      "matches_local": true,
+      "sha256": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6"
+    },
+    {
+      "path": "/assets/main-btuIQebM.js",
+      "matches_local": true,
+      "sha256": "da82b16acdb89a90e361acb98acb152d41f1b4dc46eed4569e616ae8f129acc5"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "6bd84684-406d-425c-a21b-51ddf8d061e8",
+    "status": "SUCCESS",
+    "createdAt": "2026-09-29T23:19:01.698Z",
+    "meta": {
+      "buildOnly": false,
+      "cliAgentSessionId": "01a0ea21-9fd7-78f2-aa4e-d49cc56415e4",
+      "cliCaller": "codex",
+      "cliMessage": "v1.30: Scene life and street pavement scale verified",
+      "fileServiceManifest": {},
+      "imageDigest": "sha256:1e2bb3c1df318ac0e19e103730fadaf599a48622f6d58ed81a2bafec253bbdc9",
+      "logsV2": true,
+      "nixpacksProviders": [],
+      "propertyFileMapping": {},
+      "reason": "deploy",
+      "rootDirectory": null,
+      "runtime": "V2",
+      "serviceManifest": {
+        "build": {
+          "buildCommand": null,
+          "buildEnvironment": "V3",
+          "builder": "DOCKERFILE",
+          "dockerfilePath": "/Dockerfile",
+          "nixpacksConfigPath": null,
+          "nixpacksPlan": null,
+          "watchPatterns": []
+        },
+        "deploy": {
+          "cronSchedule": null,
+          "drainingSeconds": null,
+          "healthcheckPath": null,
+          "healthcheckTimeout": null,
+          "ipv6EgressEnabled": false,
+          "limitOverride": null,
+          "multiRegionConfig": {
+            "europe-west4-drams3a": {
+              "numReplicas": 1
+            }
+          },
+          "numReplicas": 1,
+          "overlapSeconds": null,
+          "preDeployCommand": null,
+          "preDeployTimeoutSeconds": null,
+          "region": null,
+          "registryCredentials": null,
+          "requiredMountPath": null,
+          "restartPolicyMaxRetries": 10,
+          "restartPolicyType": "ON_FAILURE",
+          "runtime": "V2",
+          "sleepApplication": false,
+          "startCommand": null,
+          "useLegacyStacker": false
+        }
+      },
+      "volumeMounts": []
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "deployment": "da189e36-6609-4310-931a-acbce505c482",
+  "status": "SUCCESS",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 19438,
+      "sha256Matches": true
+    },
+    {
+      "path": "design-preview/index.html",
+      "bytes": 504,
+      "sha256Matches": true
+    },
+    {
+      "path": "assets/index-CtSnS10B.js",
+      "bytes": 367843,
+      "sha256Matches": true
+    },
+    {
+      "path": "assets/index-CyEmdMID.css",
+      "bytes": 79681,
+      "sha256Matches": true
+    },
+    {
+      "path": "assets/scene-ZFMLApKS.js",
+      "bytes": 464483,
+      "sha256Matches": true
+    },
+    {
+      "path": "data/regions/dosan.json.gz",
+      "bytes": 47418,
+      "sha256Matches": true
+    },
+    {
+      "path": "data/regions/bongjeong.json.gz",
+      "bytes": 52516,
+      "sha256Matches": true
+    },
+    {
+      "path": "data/regions/hahoe.json.gz",
+      "bytes": 94360,
+      "sha256Matches": true
+    },
+    {
+      "path": "data/heritage-media.json",
+      "bytes": 10296,
+      "sha256Matches": true
+    }
+  ]
+}

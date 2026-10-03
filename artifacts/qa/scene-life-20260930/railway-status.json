@@ -1,0 +1,199 @@
+{
+  "buckets": {
+    "edges": []
+  },
+  "deletedAt": null,
+  "environments": {
+    "edges": [
+      {
+        "node": {
+          "canAccess": true,
+          "deletedAt": null,
+          "id": "6a49108b-021a-4e73-b15d-989bb1bb6a35",
+          "name": "production",
+          "serviceInstances": {
+            "edges": [
+              {
+                "node": {
+                  "activeDeployments": [
+                    {
+                      "createdAt": "2026-09-29T22:55:07.327Z",
+                      "deploymentStopped": false,
+                      "id": "5c868045-d814-4958-a5ec-87179d0582bc",
+                      "instances": [
+                        {
+                          "id": "b21e0475-1eed-4d3b-8b44-9659ed4c1557",
+                          "status": "RUNNING"
+                        }
+                      ],
+                      "meta": {
+                        "buildOnly": false,
+                        "cliAgentSessionId": "01a0ea21-9fd7-78f2-aa4e-d49cc56415e4",
+                        "cliCaller": "codex",
+                        "cliMessage": "v1.29: passenger-scale bus cabins, people, interactive rides and street scenery",
+                        "fileServiceManifest": {},
+                        "imageDigest": "sha256:bf1dab48e4e1ecf4138eaf016ea8e5dfac3633f04315307faecd76417c438519",
+                        "logsV2": true,
+                        "nixpacksProviders": [],
+                        "propertyFileMapping": {},
+                        "reason": "deploy",
+                        "rootDirectory": null,
+                        "runtime": "V2",
+                        "serviceManifest": {
+                          "build": {
+                            "buildCommand": null,
+                            "buildEnvironment": "V3",
+                            "builder": "DOCKERFILE",
+                            "dockerfilePath": "/Dockerfile",
+                            "nixpacksConfigPath": null,
+                            "nixpacksPlan": null,
+                            "watchPatterns": []
+                          },
+                          "deploy": {
+                            "cronSchedule": null,
+                            "drainingSeconds": null,
+                            "healthcheckPath": null,
+                            "healthcheckTimeout": null,
+                            "ipv6EgressEnabled": false,
+                            "limitOverride": null,
+                            "multiRegionConfig": {
+                              "europe-west4-drams3a": {
+                                "numReplicas": 1
+                              }
+                            },
+                            "numReplicas": 1,
+                            "overlapSeconds": null,
+                            "preDeployCommand": null,
+                            "preDeployTimeoutSeconds": null,
+                            "region": null,
+                            "registryCredentials": null,
+                            "requiredMountPath": null,
+                            "restartPolicyMaxRetries": 10,
+                            "restartPolicyType": "ON_FAILURE",
+                            "runtime": "V2",
+                            "sleepApplication": false,
+                            "startCommand": null,
+                            "useLegacyStacker": false
+                          }
+                        },
+                        "volumeMounts": []
+                      },
+                      "status": "SUCCESS"
+                    }
+                  ],
+                  "cronSchedule": null,
+                  "domains": {
+                    "customDomains": [],
+                    "serviceDomains": [
+                      {
+                        "domain": "andong-atlas-production.up.railway.app",
+                        "id": "990ba74b-4120-4aa6-94cc-04fc49c61230",
+                        "targetPort": 8080
+                      }
+                    ]
+                  },
+                  "environmentId": "6a49108b-021a-4e73-b15d-989bb1bb6a35",
+                  "id": "fe101a04-2b83-44f3-8346-9cfdf1f4fe51",
+                  "latestDeployment": {
+                    "canRedeploy": true,
+                    "createdAt": "2026-09-29T22:55:07.327Z",
+                    "deploymentStopped": false,
+                    "id": "5c868045-d814-4958-a5ec-87179d0582bc",
+                    "instances": [
+                      {
+                        "id": "b21e0475-1eed-4d3b-8b44-9659ed4c1557",
+                        "status": "RUNNING"
+                      }
+                    ],
+                    "meta": {
+                      "buildOnly": false,
+                      "cliAgentSessionId": "01a0ea21-9fd7-78f2-aa4e-d49cc56415e4",
+                      "cliCaller": "codex",
+                      "cliMessage": "v1.29: passenger-scale bus cabins, people, interactive rides and street scenery",
+                      "fileServiceManifest": {},
+                      "imageDigest": "sha256:bf1dab48e4e1ecf4138eaf016ea8e5dfac3633f04315307faecd76417c438519",
+                      "logsV2": true,
+                      "nixpacksProviders": [],
+                      "propertyFileMapping": {},
+                      "reason": "deploy",
+                      "rootDirectory": null,
+                      "runtime": "V2",
+                      "serviceManifest": {
+                        "build": {
+                          "buildCommand": null,
+                          "buildEnvironment": "V3",
+                          "builder": "DOCKERFILE",
+                          "dockerfilePath": "/Dockerfile",
+                          "nixpacksConfigPath": null,
+                          "nixpacksPlan": null,
+                          "watchPatterns": []
+                        },
+                        "deploy": {
+                          "cronSchedule": null,
+                          "drainingSeconds": null,
+                          "healthcheckPath": null,
+                          "healthcheckTimeout": null,
+                          "ipv6EgressEnabled": false,
+                          "limitOverride": null,
+                          "multiRegionConfig": {
+                            "europe-west4-drams3a": {
+                              "numReplicas": 1
+                            }
+                          },
+                          "numReplicas": 1,
+                          "overlapSeconds": null,
+                          "preDeployCommand": null,
+                          "preDeployTimeoutSeconds": null,
+                          "region": null,
+                          "registryCredentials": null,
+                          "requiredMountPath": null,
+                          "restartPolicyMaxRetries": 10,
+                          "restartPolicyType": "ON_FAILURE",
+                          "runtime": "V2",
+                          "sleepApplication": false,
+                          "startCommand": null,
+                          "useLegacyStacker": false
+                        }
+                      },
+                      "volumeMounts": []
+                    },
+                    "status": "SUCCESS"
+                  },
+                  "nextCronRunAt": null,
+                  "numReplicas": null,
+                  "serviceId": "57478b25-0457-456e-a84d-726d1d62c2d9",
+                  "serviceName": "andong-atlas",
+                  "source": {
+                    "image": null,
+                    "repo": null
+                  },
+                  "startCommand": null
+                }
+              }
+            ]
+          },
+          "unmergedChangesCount": null,
+          "volumeInstances": {
+            "edges": []
+          }
+        }
+      }
+    ]
+  },
+  "id": "83cb6cfa-06b7-418d-9cf9-b11d0bbe424e",
+  "name": "andong-3d-atlas",
+  "services": {
+    "edges": [
+      {
+        "node": {
+          "id": "57478b25-0457-456e-a84d-726d1d62c2d9",
+          "name": "andong-atlas"
+        }
+      }
+    ]
+  },
+  "workspace": {
+    "name": "kysk2295's Projects"
+  },
+  "workspaceId": "9de1fd37-eeec-4924-a695-5a5228bf667a"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matches": true,
+    "sha256": "b13b65098e335be4f0bbc0c6ecfe9ef46a42a1c6cf3b62e5bbf17b1866cc60b1"
+  },
+  {
+    "path": "assets/BufferGeometryUtils-BX5XnFUn.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "27366650f011aeffd0219993192d05dfc2d29cf5ced89e4a7684cb5a09a89362"
+  },
+  {
+    "path": "assets/index-655R9jYR.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "ac7ce3e28ca45a33858c81b3a434323bb949f194a85cea85cb00e9ddac8ea795"
+  },
+  {
+    "path": "assets/main-DtO1L0g2.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "3b6be192bc9d9bcfb93e646276034477a6abb7641e8614a1c7bfeb07da9bc8fe"
+  },
+  {
+    "path": "assets/preload-helper-BXl3LOEh.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6"
+  },
+  {
+    "path": "assets/relay-ui-CeeCRGPE.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "102a756b05f18e9e999fd4c369e740d870fd36e31cf5107a4362ce7fac8260a5"
+  },
+  {
+    "path": "assets/scene-BNbsYQP7.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "fad268a3aaf4ddf49d9b6eb3785ef9f5b8e7f93e5677a4a3756ee3bb8787b154"
+  },
+  {
+    "path": "assets/tourism-map-ui-Bq0JAMCH.js",
+    "status": 200,
+    "matches": true,
+    "sha256": "0d2ab364c31822effc8478698cd390c38b2b486c9f04ee7b3a43ed7dcc8424a0"
+  },
+  {
+    "path": "assets/main-BquLUYwE.css",
+    "status": 200,
+    "matches": true,
+    "sha256": "eac38741cc95802ecd24939c5f86e64896354f97088f69712c6658b1cc54ca64"
+  },
+  {
+    "path": "assets/relay-ui-DyqRMchE.css",
+    "status": 200,
+    "matches": true,
+    "sha256": "b6a13655ed59bc65ce7bc13f2c8132759ef8ec5c0f6417dcfa98c82fe6fc4981"
+  },
+  {
+    "path": "assets/tourism-map-ui-DCeI6jJy.css",
+    "status": 200,
+    "matches": true,
+    "sha256": "9628f6d8320a06b66479b835f015ac58703ba7278ffa3092613087368c36dfd8"
+  },
+  {
+    "path": "assets/relay/document/stage-1-image8.webp",
+    "status": 200,
+    "matches": true,
+    "sha256": "dd01869255f584793f2899cbd7cb94709c61deae7ee17363a226c21975dd8710"
+  }
+]

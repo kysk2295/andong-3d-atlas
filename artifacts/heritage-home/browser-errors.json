@@ -1,0 +1,12 @@
+{
+  "note": "The one main-tab error belongs to the fixed earlier scene-BkWvZsfH.js build. Final assets: index-C29x8vkc.js, scene-Cn5TFyjb.js.",
+  "main": [
+    {
+      "level": "error",
+      "message": "Regional detail hahoe TypeError: f.push is not a function\n    at Ur.buildStreets (http://localhost:4174/assets/scene-BkWvZsfH.js:3831:6079)\n    at new Ur (http://localhost:4174/assets/scene-BkWvZsfH.js:3826:6716)\n    at Bf.activate (http://localhost:4174/assets/scene-BkWvZsfH.js:3831:48065)\n    at async nh.select (http://localhost:4174/assets/scene-BkWvZsfH.js:3841:44207)",
+      "timestamp": "2026-09-28T22:14:45.849Z",
+      "url": "http://localhost:4174/assets/scene-BkWvZsfH.js"
+    }
+  ],
+  "preview": []
+}

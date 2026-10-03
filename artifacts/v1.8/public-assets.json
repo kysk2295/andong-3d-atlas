@@ -1,0 +1,58 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "95c5d2e851ebadaa9dc36df511fa4ab791a631867e19e7c6236a68d67b648130"
+  },
+  {
+    "path": "data/report-effects.json",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "a3f30da70e1c23e864d9be3cc49de48db31bd9d68dcb19c16fdffcc5a4e09635"
+  },
+  {
+    "path": "data/restaurant-info.json",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "00f5e1f269093770266b142a0b86959f5219cc9136a500078dcb7ed55c969b84"
+  },
+  {
+    "path": "data/transport.json",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "5aa37f4c956191a3c77109102cc07f641b7b5de42f6ff32d742da9e828476ea7"
+  },
+  {
+    "path": "data/place-media.json",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "217c0d64c6f1b6c54354c7cf93e10f923a72f4f81fe9fb9bece1b7bda155d210"
+  },
+  {
+    "path": "data/journey.json.gz",
+    "status": 200,
+    "matches": true,
+    "basis": "uncompressed payload",
+    "sha256": "a0ba8d228dd4b54f2e70e2af987fe956feb6c8dd95d901eba002cd06ce96785b"
+  },
+  {
+    "path": "assets/index-Do3ztmNQ.js",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "4cf56dcb040d495092880fa48349924c968a68b0c82df449f0b6a3ce154207e4"
+  },
+  {
+    "path": "assets/index-CJOAMf95.css",
+    "status": 200,
+    "matches": true,
+    "basis": "file",
+    "sha256": "2a54f636f4c1e18d16f40d78a928ba8fe853b7f62e93c5c6f9d297d9e966f5a1"
+  }
+]

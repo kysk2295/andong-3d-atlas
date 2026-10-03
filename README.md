@@ -12,10 +12,12 @@
 
 | 영상 | 내용 | 재생·다운로드 |
 |---|---|---|
-| 사이트 소개 · 76초 | 3D 지도, 하회마을과 원도심, 낮과 밤, 1인칭 체험 | [MP4 보기](docs/media/andong-overview.mp4) · [다운로드](https://raw.githubusercontent.com/kysk2295/andong-datalab-2026/main/andong-atlas/docs/media/andong-overview.mp4) |
-| 릴레이 체험 · 72초 | 골목 → 식사 → 결제·QR → 체험 할인 → 공방 → 월영교·팝업 | [MP4 보기](docs/media/andong-relay.mp4) · [다운로드](https://raw.githubusercontent.com/kysk2295/andong-datalab-2026/main/andong-atlas/docs/media/andong-relay.mp4) |
+| 사이트 소개 · 76초 | 3D 지도, 하회마을과 원도심, 낮과 밤, 1인칭 체험 | [MP4 보기](docs/media/andong-overview.mp4) · [다운로드](https://raw.githubusercontent.com/kysk2295/andong-3d-atlas/main/docs/media/andong-overview.mp4) |
+| 릴레이 체험 · 72초 | 골목 → 식사 → 결제·QR → 체험 할인 → 공방 → 월영교·팝업 | [MP4 보기](docs/media/andong-relay.mp4) · [다운로드](https://raw.githubusercontent.com/kysk2295/andong-3d-atlas/main/docs/media/andong-relay.mp4) |
 
 실제 웹 3D 화면을 편집한 한국어 자막·음악 포함 영상입니다. 1280×720 H.264/AAC MP4로 첨부했습니다. 영상은 2026-09-30 제작 당시 화면이며, 이후 추가된 v1.30 방문객·정류장 개선은 아래 실행 화면과 배포 사이트에서 확인할 수 있습니다. [영상 정보·출처](docs/VIDEOS.md)
+
+> 이 저장소는 3D 웹 프로토타입만 담습니다. 데이터 분석·서식4·대시보드·보고서는 **[andong-datalab-2026](https://github.com/kysk2295/andong-datalab-2026)** 에 있습니다.
 
 ## 어떤 것을 체험하나요?
 
@@ -129,7 +131,7 @@ andong-atlas/
 └── Dockerfile    # Node.js 22 빌드·실행 환경
 ```
 
-Three.js와 Vite를 사용합니다. 자료 재생성은 `npm run data` 및 `scripts/`의 개별 도구로 수행하며, 상위 저장소의 분석 원본·추가 Python 의존성·네트워크 접근이 필요할 수 있습니다. 재수집 명령은 일반 실행 과정에 포함하지 않습니다.
+Three.js와 Vite를 사용합니다. 자료 재생성은 `npm run data` 및 `scripts/`의 개별 도구로 수행하며, [분석 저장소](https://github.com/kysk2295/andong-datalab-2026)의 분석 원본·추가 Python 의존성·네트워크 접근이 필요할 수 있습니다. 재수집 명령은 일반 실행 과정에 포함하지 않습니다.
 
 ## 실제 자료와 기획 시연의 구분
 
@@ -147,4 +149,5 @@ Three.js와 Vite를 사용합니다. 자료 재생성은 `npm run data` 및 `scr
 - [검증 기록](QA.md)
 - [사진과 구현 비교](REFERENCE_COMPARISON.md)
 - [영상 정보](docs/VIDEOS.md)
-- [상위 분석·조사 저장소](../README.md)
+- [검증·제작 기록 `artifacts/`](artifacts/): 버전별 QA 스크린샷·로그·배포 확인 기록
+- [분석·조사 저장소 andong-datalab-2026](https://github.com/kysk2295/andong-datalab-2026): 이 지도에 쓴 데이터랩 분석 원본. 이 저장소는 그곳에 `andong-atlas/` 서브모듈로 연결됩니다.

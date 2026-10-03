@@ -1,0 +1,27 @@
+[
+  {
+    "asset": "assets/index-BTagKEZh.js",
+    "bytes": 1948,
+    "match": true
+  },
+  {
+    "asset": "assets/main-D1-3f93f.js",
+    "bytes": 455721,
+    "match": true
+  },
+  {
+    "asset": "assets/main-BquLUYwE.css",
+    "bytes": 82956,
+    "match": true
+  },
+  {
+    "asset": "assets/relay-ui-2uxhbHCQ.js",
+    "bytes": 701503,
+    "match": true
+  },
+  {
+    "asset": "assets/relay-ui-ZBn8qWwi.css",
+    "bytes": 76847,
+    "match": true
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "44de4288-6139-4c01-be8c-4991e5c8bf87",
+    "status": "SUCCESS",
+    "createdAt": "2026-09-29T00:08:49.909Z",
+    "meta": {
+      "buildOnly": false,
+      "cliAgentSessionId": "01a0e776-5183-7141-adb5-0d4eb93630ca",
+      "cliCaller": "codex",
+      "cliMessage": "v1.6: heritage walks, travel cameras, scenario and benefit maps",
+      "fileServiceManifest": {},
+      "imageDigest": "sha256:742d2bf9922005eed91d982842f0d924c172b435bf46ab8fe252d729253da597",
+      "logsV2": true,
+      "nixpacksProviders": [],
+      "propertyFileMapping": {},
+      "reason": "deploy",
+      "rootDirectory": null,
+      "runtime": "V2",
+      "serviceManifest": {
+        "build": {
+          "buildCommand": null,
+          "buildEnvironment": "V3",
+          "builder": "DOCKERFILE",
+          "dockerfilePath": "/Dockerfile",
+          "nixpacksConfigPath": null,
+          "nixpacksPlan": null,
+          "watchPatterns": []
+        },
+        "deploy": {
+          "cronSchedule": null,
+          "drainingSeconds": null,
+          "healthcheckPath": null,
+          "healthcheckTimeout": null,
+          "ipv6EgressEnabled": false,
+          "limitOverride": null,
+          "multiRegionConfig": {
+            "europe-west4-drams3a": {
+              "numReplicas": 1
+            }
+          },
+          "numReplicas": 1,
+          "overlapSeconds": null,
+          "preDeployCommand": null,
+          "preDeployTimeoutSeconds": null,
+          "region": null,
+          "registryCredentials": null,
+          "requiredMountPath": null,
+          "restartPolicyMaxRetries": 10,
+          "restartPolicyType": "ON_FAILURE",
+          "runtime": "V2",
+          "sleepApplication": false,
+          "startCommand": null,
+          "useLegacyStacker": false
+        }
+      },
+      "volumeMounts": []
+    }
+  }
+]

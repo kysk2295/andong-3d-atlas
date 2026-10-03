@@ -1,0 +1,19 @@
+✔ popup visibility is independent from benefits and the relay route, and old preferences migrate (4.036541ms)
+✔ proposal anchor and metre-based layout preserve the scene spacing without claiming actual booth locations (2.798041ms)
+✔ all nine booth links arrive at a walkable station and invalid booth links cannot move another scene (1.647125ms)
+✔ the map toggle controls nine solid 3D booths with depth and shading, independently of the base city (67.856458ms)
+✔ booth flashes stay local, can restart, and restore original lighting after completion or hiding (41.303125ms)
+✔ only geolocated resident-card merchants become clickable geographic pins (2.32175ms)
+✔ three numbered stages preserve route endpoints and locate transfer by distance (1.360083ms)
+✔ independent layers do not introduce unlocated or synthetic benefit markers (0.910333ms)
+✔ map framing preserves geographic aspect and keeps markers within desktop and mobile bounds (1.171125ms)
+✔ published small map is derived from the existing benefit and route sources (17.766875ms)
+✔ overlapping pins form selectable clusters without losing or moving the source places (1.261958ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 342.973792

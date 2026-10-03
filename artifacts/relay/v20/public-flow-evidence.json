@@ -1,0 +1,12 @@
+{
+  "water": {
+    "mean_delta": 4.694536585365854,
+    "changed_pixels": 8998,
+    "total_pixels": 10250
+  },
+  "sky": {
+    "mean_delta": 0.0,
+    "changed_pixels": 0,
+    "total_pixels": 23400
+  }
+}

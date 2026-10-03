@@ -1,0 +1,327 @@
+{
+  "deployment_id": "af14de2f-f91b-4252-8b1a-d339bf4bd797",
+  "version": "1.17.0",
+  "url": "https://andong-atlas-production.up.railway.app/?experience=relay",
+  "checked_at": "2026-09-29T12:26:16.592111+00:00",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 19989,
+      "sha256": "c27867119aa66232d00284ad40f788a33aa183bb5cc33aa887acd17db51378dc",
+      "matches_local": true
+    },
+    {
+      "path": "data/relay-materials.json",
+      "status": 200,
+      "bytes": 14830,
+      "sha256": "5f58f0bf28e890c33c2c180074b9225e5c7052c7afe86d980f14fe958de91b49",
+      "matches_local": true
+    },
+    {
+      "path": "data/relay-document-photos.json",
+      "status": 200,
+      "bytes": 79297,
+      "sha256": "c8c64a90e7335b7e9560e92fcd78804af22fcf034c6f54500a203862475522bb",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/document/stage-1-image8.webp",
+      "status": 200,
+      "bytes": 192804,
+      "sha256": "dd01869255f584793f2899cbd7cb94709c61deae7ee17363a226c21975dd8710",
+      "matches_local": true
+    },
+    {
+      "path": "assets/BufferGeometryUtils-BBTE_nhi.js",
+      "status": 200,
+      "bytes": 329145,
+      "sha256": "ab440bc7c48d1df50d8d2bc129ad71ef71fa33e509fa28920f5907c3a68915d3",
+      "matches_local": true
+    },
+    {
+      "path": "assets/index-Cfnjyztp.js",
+      "status": 200,
+      "bytes": 1903,
+      "sha256": "8025c39530bbaec472b117ba1d67eda7eba363a7a539f0c2f5b0bba0d5e1688c",
+      "matches_local": true
+    },
+    {
+      "path": "assets/preload-helper-BXl3LOEh.js",
+      "status": 200,
+      "bytes": 1110,
+      "sha256": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6",
+      "matches_local": true
+    },
+    {
+      "path": "assets/three.core-CsYAtVuE.js",
+      "status": 200,
+      "bytes": 258504,
+      "sha256": "4e9d4a65b115f6438c75ecac23429db2ebe8248b4c72ef0eb091fb3d6381f8cf",
+      "matches_local": true
+    },
+    {
+      "path": "assets/scene-CS2fnu24.js",
+      "status": 200,
+      "bytes": 136336,
+      "sha256": "8ac46c8a03b366a8ddf2f720d79561bb97d9206673f7c813c3f61843f5f963d1",
+      "matches_local": true
+    },
+    {
+      "path": "assets/main-BJuQoA7I.js",
+      "status": 200,
+      "bytes": 436715,
+      "sha256": "cd4c66a97d19a13353016ac83ed0d5f498966700c1bd071563e35ba82172d55a",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay-ui-LCZgJrYL.js",
+      "status": 200,
+      "bytes": 647881,
+      "sha256": "99bafd16a4f65290eceb7bfa0b45538c7827043b26e9383df4e5c92f4b0fb63c",
+      "matches_local": true
+    },
+    {
+      "path": "assets/main-Dn3hXRZA.css",
+      "status": 200,
+      "bytes": 83202,
+      "sha256": "642a4e148c59f8abf74ed8b7c6e201adcd3eb6edd79131249c3e62f7d1c394db",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay-ui-D5TTeXMZ.css",
+      "status": 200,
+      "bytes": 70434,
+      "sha256": "dc0725c27a6bf670dc9f5c3ae2476159db47b6279cdbc31b411d81e7668191e0",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_floor_nor_gl.jpg",
+      "status": 200,
+      "bytes": 423303,
+      "sha256": "452247f0d0d1b7fc7f8324ff3b6ed60bcc6de1405f4284eeb8d9bce90d4939c2",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/clay_plaster_nor_gl.jpg",
+      "status": 200,
+      "bytes": 784921,
+      "sha256": "359f814292005ab16be86807678a4a51e8256a87c282ebf5f5333ce18c428fba",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/cobblestone_floor_02_nor_gl.jpg",
+      "status": 200,
+      "bytes": 208641,
+      "sha256": "838f9f169956fceac4996967ff14dfcbc47b658bbedf1e60c0cd4536977aa064",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/qwantani_sunset_puresky_hdri.hdr",
+      "status": 200,
+      "bytes": 1061624,
+      "sha256": "e90f2130848de0364b76d2b3da7a72ce31bbb95d66bd86d5b4f85f0626421b8d",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_floor_diffuse.jpg",
+      "status": 200,
+      "bytes": 734493,
+      "sha256": "2a1c07687b6dbb214c4b9213739c6d92d425f1f0fc8ab3ac157f105d78240789",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_floor_rough.jpg",
+      "status": 200,
+      "bytes": 527754,
+      "sha256": "061f1e1293251b2d28c76e3fac1ea9452b0e8648bb8f9b3728e09db386166e5c",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/clay_plaster_diffuse.jpg",
+      "status": 200,
+      "bytes": 354209,
+      "sha256": "82e43c68bddebb55a18577ae3cb0d01c02c23f086d342a854ff8a174d9f4fd73",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/clay_plaster_rough.jpg",
+      "status": 200,
+      "bytes": 345709,
+      "sha256": "e91a6238456b54a82dbf2c025e0b046851c90e7e772fe2affd26a46b243ce7b7",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/cobblestone_floor_02_diffuse.jpg",
+      "status": 200,
+      "bytes": 221882,
+      "sha256": "b1be7866d908135276ae6bdb566cf81789caf3092d12ad1c1915131fc747fd53",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/cobblestone_floor_02_rough.jpg",
+      "status": 200,
+      "bytes": 163268,
+      "sha256": "39d802084263449216d7467c7d8a2134939a165eb8581f033048bfb1344ba2a1",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_table_diffuse.jpg",
+      "status": 200,
+      "bytes": 987969,
+      "sha256": "f81642ae141958feac6c5acac03e2aeb6cfe049dff301d0627e3c17f2dc5c7a5",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_table_nor_gl.jpg",
+      "status": 200,
+      "bytes": 625535,
+      "sha256": "88ecc8e54c30314f4662696ddf8c05b031976e3cbc68e399daa5ebddfb4cec71",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/wood_table_rough.jpg",
+      "status": 200,
+      "bytes": 618983,
+      "sha256": "5b98d4d6b22960c781050ba622cebe67d8710c7a7ba0060b24cb6752d50fde32",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/brick_wall_001_diffuse.jpg",
+      "status": 200,
+      "bytes": 574381,
+      "sha256": "6a1233ec0186703de830354d89f122991e61e67fb67e0846c7eaf6c5aefea902",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/brick_wall_001_nor_gl.jpg",
+      "status": 200,
+      "bytes": 295279,
+      "sha256": "8afbe3919308b168a6b7235fe7b930f670cfffa1a34de39ee790d55c9d7bda09",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/brick_wall_001_rough.jpg",
+      "status": 200,
+      "bytes": 211093,
+      "sha256": "a23342b02e6c5af106aaece16130aa9153a801cb1a84d5f3e0d06ce248677f38",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/fabric_pattern_05_diffuse.jpg",
+      "status": 200,
+      "bytes": 797220,
+      "sha256": "b9ece89a45044945ce4d1402672cfd605f1f074b313cb3cc12b7b2ea66fad7fe",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/fabric_pattern_05_nor_gl.jpg",
+      "status": 200,
+      "bytes": 903085,
+      "sha256": "caa5a948c768c7173b1d8647aa2618d39b4ec5ba4575820e02fb500dac54596d",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/fabric_pattern_05_rough.jpg",
+      "status": 200,
+      "bytes": 438194,
+      "sha256": "e48d14e87a5493bc4ef9bea61e85b4397ec41f93d1c3fd1ac17494475781610e",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_needles_diffuse.jpg",
+      "status": 200,
+      "bytes": 1623201,
+      "sha256": "288f8752514dfcfb78e5d6bc927b585605a13b050a1a79de78044f7c0574c0fc",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_needles_nor_gl.jpg",
+      "status": 200,
+      "bytes": 797935,
+      "sha256": "2a02a482a18d20255c800845902d5e0061d2a2d14107d7c4ed0b789414153141",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_needles_rough.jpg",
+      "status": 200,
+      "bytes": 391582,
+      "sha256": "2e9e6e836d457d38edb07ef8a6d6a7f614d7f4fb31f54e1b01d03e5eb746059d",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_needles_alpha.jpg",
+      "status": 200,
+      "bytes": 543197,
+      "sha256": "f5ed442eb05363114c79901136feddbf500b7c089ae991e7e4b9ff250ea47195",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_bark_diffuse.jpg",
+      "status": 200,
+      "bytes": 2700448,
+      "sha256": "359bb1be7aab30f5b79d391af9ef088503d6d135d529c9fc06bce60adf28ef60",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_bark_nor_gl.jpg",
+      "status": 200,
+      "bytes": 1016849,
+      "sha256": "05c46455531781b6cf18cae0648cf627f60ee942adaa8bcbfd1592fc2506a9e0",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/pine_bark_rough.jpg",
+      "status": 200,
+      "bytes": 611111,
+      "sha256": "5dcb8d6eb5833720e3cf9f443985e9d427fd736aa86348d170a5d29a259c506b",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/forest_ground_04_diffuse.jpg",
+      "status": 200,
+      "bytes": 1113899,
+      "sha256": "50a4dda30875020c64385261aa7e00e2155b592302fa6794165f58fae73cbd2c",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/forest_ground_04_nor_gl.jpg",
+      "status": 200,
+      "bytes": 1326812,
+      "sha256": "9c3a0200e02ce40edffbbf9f5f623ef08ea9b1b7812b556182ec978f88887151",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/forest_ground_04_rough.jpg",
+      "status": 200,
+      "bytes": 627507,
+      "sha256": "89d4d50395eb92824a64132c4bc8a5a09009071e0b325ab66dc3104c7a3090ed",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/qwantani_night_puresky_hdri.hdr",
+      "status": 200,
+      "bytes": 5461210,
+      "sha256": "d458fe7f20969d89eedbb7ae12d346abf68c86d844235696e7d70baad3e04cf0",
+      "matches_local": true
+    },
+    {
+      "path": "assets/relay/materials/studio_small_09_hdri.hdr",
+      "status": 200,
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+      "matches_local": true
+    }
+  ],
+  "railway_status": "SUCCESS",
+  "browser_smoke_test": {
+    "url": "https://andong-atlas-production.up.railway.app/?experience=relay",
+    "steps": [
+      "Welcome screen rendered",
+      "Start relay -> market",
+      "Enter restaurant -> restaurant and menu action"
+    ],
+    "console_errors": [],
+    "screenshot": "railway-live.png"
+  }
+}

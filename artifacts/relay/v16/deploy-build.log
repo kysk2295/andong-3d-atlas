@@ -1,0 +1,25 @@
+[INFO] dist/assets/main-DtO1L0g2.js                 455.14 kB │ gzip: 129.02 kB
+
+[INFO] dist/assets/tourism-map-ui-Bq0JAMCH.js       594.07 kB │ gzip: 154.28 kB
+
+[INFO] dist/assets/relay-ui-JqWQw29x.js             700.01 kB │ gzip: 241.21 kB
+
+[INFO] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+[INFO] ✓ built in 4.13s
+
+[INFO] [build 9/9] RUN npm run build
+[INFO] [stage-1 3/4] COPY --from=build /app/dist ./dist
+[INFO] [stage-1 3/4] COPY --from=build /app/dist ./dist
+[INFO] [stage-1 4/4] COPY server.mjs ./
+[INFO] [stage-1 4/4] COPY server.mjs ./
+[INFO] exporting to docker image format
+[INFO] exporting to docker image format
+containerimage.digest: sha256:bf2e1b09f13a261404eadbf08d51a0a3dfc3f7fb2d997682abe58a6d8f7c44ef
+containerimage.descriptor: eyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJkaWdlc3QiOiJzaGEyNTY6YmYyZTFiMDlmMTNhMjYxNDA0ZWFkYmYwOGQ1MWEwYTNkZmMzZjdmYjJkOTk3NjgyYWJlNThhNmQ4ZjdjNDRlZiIsInNpemUiOjE2MjMsImFubm90YXRpb25zIjp7Im9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyNi0wOS0yOVQxNTo1OTowNFoifSwicGxhdGZvcm0iOnsiYXJjaGl0ZWN0dXJlIjoiYW1kNjQiLCJvcyI6ImxpbnV4In19
+containerimage.config.digest: sha256:775da722e18d72238c3fa7078423ce3ee5b1aa3121ac5c870019085638e2407c
+[INFO] image push

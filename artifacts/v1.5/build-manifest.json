@@ -1,0 +1,31 @@
+{
+  "version": "1.5.0",
+  "date": "2026-09-29",
+  "deployment": "local only",
+  "files": {
+    "dist/index.html": {
+      "bytes": 19438,
+      "sha256": "9b09136b8360e33070e6aa1093f512869a1403262a6bf474e474a6a4d0acee65"
+    },
+    "dist/assets/scene-CWAkcZpR.js": {
+      "bytes": 453979,
+      "sha256": "556579e0ecb8f75cb8a989e0b5f6cbaf6c7114fcb892ed6cd0914d31cfb0f89e"
+    },
+    "dist/assets/index-DKXoeqhw.js": {
+      "bytes": 322761,
+      "sha256": "0b4cc576718fcbd36c7c335323ca2f9e9793f02bfa3437170c79616054eb784c"
+    },
+    "dist/assets/index-Cq_ZQC8o.css": {
+      "bytes": 61315,
+      "sha256": "cf1fc725ce05b45d2026f90f954aed503f785ae89d8a4ac71370a9ad454e666b"
+    },
+    "public/data/regions.json": {
+      "bytes": 32800,
+      "sha256": "d71d6f2a6a001f196949406f99dd36832fba25d563413bb0a21bceca7161cc66"
+    },
+    "public/data/journey.json": {
+      "bytes": 2358791,
+      "sha256": "3708d705d31620df48ba51f3769400712805405f8fa58fbfe91e7061f6084095"
+    }
+  }
+}

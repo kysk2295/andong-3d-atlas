@@ -1,0 +1,94 @@
+[
+  {
+    "step": "spawn",
+    "position": "0.150,1.700,8.000"
+  },
+  {
+    "step": "w",
+    "position": "0.150,1.700,7.725"
+  },
+  {
+    "step": "a",
+    "position": "-0.109,1.700,7.725"
+  },
+  {
+    "step": "s",
+    "position": "-0.109,1.700,7.985"
+  },
+  {
+    "step": "d",
+    "position": "0.160,1.700,7.985"
+  },
+  {
+    "step": "jump",
+    "position": "0.160,2.086,7.985",
+    "airborne": "true"
+  },
+  {
+    "step": "landed",
+    "position": "0.160,1.700,7.985",
+    "airborne": "false"
+  },
+  {
+    "step": "manual-after-auto",
+    "position": "0.157,1.700,7.584",
+    "walkingVisible": false
+  },
+  {
+    "step": "jump-walk-final",
+    "position": "0.150,2.424,7.729",
+    "airborne": "true"
+  },
+  {
+    "step": "mobile-jump",
+    "position": "0.150,1.762,8.000",
+    "airborne": "true"
+  },
+  {
+    "step": "mobile-stick",
+    "position": "0.150,1.700,7.820"
+  },
+  {
+    "step": "mobile-arrival-animation",
+    "position": "0.000,1.700,-20.041",
+    "walkingVisible": false
+  },
+  {
+    "step": "restaurant-arrival",
+    "scene": "meal",
+    "position": "0.000,1.700,5.400"
+  },
+  {
+    "step": "mobile-manual-takeover",
+    "position": "0.141,1.700,6.279",
+    "walkingVisible": true,
+    "actionEnabled": false
+  },
+  {
+    "step": "mobile-takeover-after-overlap-fix",
+    "position": "0.146,1.700,7.420",
+    "walkingVisible": false,
+    "actionEnabled": true
+  },
+  {
+    "step": "mobile-jump-takeover",
+    "position": "0.141,2.303,6.477",
+    "airborne": "true",
+    "walkingVisible": false
+  },
+  {
+    "step": "reset-during-jump",
+    "position": "0.150,1.700,8.000",
+    "airborne": "false"
+  },
+  {
+    "step": "menu-blocks-movement",
+    "before": "0.150,1.934,8.000",
+    "after": "0.150,1.934,8.000"
+  },
+  {
+    "step": "resume-lands",
+    "position": "0.150,1.700,8.000",
+    "airborne": "false"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-29",
+  "viewports": [
+    "1280x720",
+    "390x844"
+  ],
+  "localChecks": [
+    "Bongjeong inspect/next/description expand-collapse",
+    "Hahoe source-path follow view"
+  ],
+  "publicChecks": [
+    "Dosan building observation/next/exit",
+    "Dosan official visitor facts",
+    "Matterport iframe real image displayed",
+    "media tabs and modal close"
+  ],
+  "publicConsoleErrors": [],
+  "mobileConsoleErrors": [],
+  "limitation": "Embedded Matterport rotation input not automated: CUA fractional iframe coordinate guard. Actual scene loaded on public HTTPS; local iframe stayed blank."
+}

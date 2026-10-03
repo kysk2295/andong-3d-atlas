@@ -1,0 +1,11 @@
+✔ curved roof edge samples remain finite despite Float32 rounding beyond the eaves (56.940667ms)
+✔ pavilion curved panels and tile ribs have finite geometry and normals (18.359ms)
+✔ market reconstruction exposes a hinged entrance before creating its interaction label (108.709042ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 295.978584

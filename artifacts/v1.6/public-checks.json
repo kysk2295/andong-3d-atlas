@@ -1,0 +1,86 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "sha256": "2b8f2644fbc497d5e4e6b9c6cdffba9413fd9588af902dea5be2d14e52c0caa0",
+    "match": true,
+    "bytes": 19438
+  },
+  {
+    "path": "design-preview/index.html",
+    "status": 200,
+    "sha256": "908d09ebbb85c83681172df1c76de2b8782a3de263c5d30fbff20e4c6d7b4f72",
+    "match": true,
+    "bytes": 504
+  },
+  {
+    "path": "assets/index-Da5i6_LS.js",
+    "status": 200,
+    "sha256": "d059f06b18d51096b272ead8584d1d1a7cf8d8aff168a8649dbdb4d1990f0946",
+    "match": true,
+    "bytes": 358623
+  },
+  {
+    "path": "assets/index-bhZ-p_GO.css",
+    "status": 200,
+    "sha256": "21d91e758f9e54e5668b83e8b6c88f22606a8423f36b6a1b25b599c2913d4b30",
+    "match": true,
+    "bytes": 77595
+  },
+  {
+    "path": "assets/scene-CmYl2-O8.js",
+    "status": 200,
+    "sha256": "d948c1d37ea17406fa933742a3404e8e50e87eb7217b49a024991f9b1a927880",
+    "match": true,
+    "bytes": 464375
+  },
+  {
+    "path": "data/heritage-media.json",
+    "status": 200,
+    "sha256": "c9a9b058526c528a050ce3bcfe43c7199713c7ebd98053bac0f68f87b157a5c6",
+    "match": true,
+    "bytes": 10296
+  },
+  {
+    "path": "data/solution.json",
+    "status": 200,
+    "sha256": "046461a11a7ec9d4c630f381af6fbeeafbca57c8db02734dfea7ea9147def945",
+    "match": true,
+    "bytes": 13708
+  },
+  {
+    "path": "data/journey.json",
+    "status": 200,
+    "sha256": "3708d705d31620df48ba51f3769400712805405f8fa58fbfe91e7061f6084095",
+    "match": true,
+    "bytes": 2358791
+  },
+  {
+    "path": "data/regions/hahoe.json",
+    "status": 200,
+    "sha256": "a1537d35ad2efcd97ce8d712d0437e82d565900a6cd4c9d0a7c7251d9f1fb26c",
+    "match": true,
+    "bytes": 555586
+  },
+  {
+    "path": "data/regions/byeongsan.json",
+    "status": 200,
+    "sha256": "45e4fc63d02b468f5537da83693fdccc5f813911d477fcfebdff59acf09260c6",
+    "match": true,
+    "bytes": 176876
+  },
+  {
+    "path": "data/regions/dosan.json",
+    "status": 200,
+    "sha256": "13c6c28d88a7b369011d0056f4bf99fab22124e3b93d37449409c4f7d5a7274d",
+    "match": true,
+    "bytes": 232446
+  },
+  {
+    "path": "data/regions/bongjeong.json",
+    "status": 200,
+    "sha256": "9975303facb1c55efc591cdc0de89fea2e41eb089bd32f3c480caadadaf5fb8e",
+    "match": true,
+    "bytes": 234190
+  }
+]

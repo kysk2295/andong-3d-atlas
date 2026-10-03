@@ -1,0 +1,22 @@
+
+> andong-3d-atlas@1.5.0 prebuild
+> node scripts/compress-data.mjs
+
+map: 19.08 MB → 4.34 MB
+district: 1.36 MB → 0.23 MB
+buildings: 19.91 MB → 2.52 MB
+journey: 2.36 MB → 0.53 MB
+
+> andong-3d-atlas@1.5.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1605 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  19.44 kB │ gzip:   6.33 kB
+dist/assets/index-B3GGxC14.css   70.92 kB │ gzip:  14.08 kB
+dist/assets/index-BYoYonZA.js   327.68 kB │ gzip: 100.29 kB
+dist/assets/scene-63UOtJlV.js   462.54 kB │ gzip: 116.85 kB
+✓ built in 2.35s

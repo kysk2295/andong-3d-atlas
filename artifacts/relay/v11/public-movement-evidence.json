@@ -1,0 +1,25 @@
+[
+  {
+    "step": "spawn",
+    "position": "0.000,1.700,5.400"
+  },
+  {
+    "step": "walk",
+    "position": "0.000,1.700,5.400"
+  },
+  {
+    "step": "jump",
+    "position": "0.000,1.700,5.280",
+    "airborne": "false"
+  },
+  {
+    "step": "jump-render-confirmed",
+    "position": "0.000,2.269,5.280",
+    "airborne": true
+  },
+  {
+    "step": "landed",
+    "position": "0.000,1.700,5.280",
+    "airborne": "false"
+  }
+]

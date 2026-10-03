@@ -1,0 +1,22 @@
+✔ cached reference photos preserve attribution, original bytes and honest unavailable states (27.374917ms)
+✔ every chapter reference resolves and geographic route stays in Andong (1.03325ms)
+✔ downloaded PBR materials and lighting have a license and match recorded bytes (20.678042ms)
+✔ document references and scanned props are local, intact and retain provenance (64.7995ms)
+✔ arrow keys move forward/backward and turn; diagonal walking is normalized (2.0255ms)
+✔ world controls survive button focus but leave forms, dialogs and shortcuts alone (0.120208ms)
+✔ tap, hold cancellation and keyboard activation never leave touch walking stuck (1.891458ms)
+✔ ordering, eating, paying and scanning require the previous visitor action (3.859333ms)
+✔ existing saved visits migrate while unpaid new visits remain unpaid (0.352375ms)
+✔ workshop materials cannot be counted twice and soju order is enforced (0.574334ms)
+✔ pouring has real undershoot and overshoot states and an accessible path (0.252708ms)
+✔ performance completes the popup without inventing a purchase (0.382208ms)
+✔ water and tea streams connect the moving spout to the destination vessel (2.535458ms)
+✔ cancel restores the kettle, liquid, stream, and original viewing position (1.070583ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 307.12425

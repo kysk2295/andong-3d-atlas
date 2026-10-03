@@ -6,10 +6,18 @@ dist/
 .env.local
 .env.*.local
 
-# Local screenshots, downloaded source documents, and deployment logs
-artifacts/
+# 검증 기록(artifacts/)은 올린다. 단, 재배포 허가가 없는 외부 원문·팀 문서 추출본은 제외
+artifacts/relay/v7/references/document/
+artifacts/relay/v7/references/README.md
+artifacts/relay/sources/
 .DS_Store
 __pycache__/
 *.pyc
 .env.*
 !.env.example
+
+# 재배포 조건을 확인하지 않은 외부 참고 사진
+artifacts/**/references/*.jpg
+artifacts/**/references/*.jpeg
+artifacts/**/references/*.png
+artifacts/**/references/*.webp

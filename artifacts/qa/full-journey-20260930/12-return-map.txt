@@ -1,0 +1,220 @@
+- main "안동 전역 인터랙티브 3D 지도"
+- generic "지도 위 랜드마크":
+  - button "안동구시장 · 찜닭골목 위치로 이동": 안동구시장 · 찜닭골목
+  - button "월영교 위치로 이동": 월영교
+- banner:
+  - heading "안동 ANDONG" [level=1]:
+    - text: 안동
+    - generic: ANDONG
+  - navigation "탐색 방식":
+    - button "지도 탐색":
+      - text: 지도 탐색
+    - button "코스 여행" [pressed]:
+      - text: 코스 여행
+    - button "사진 탐색":
+      - text: 사진 탐색
+  - button "탐색 패널 펼치기":
+  - button "풍경 설정":
+    - generic: 풍경
+  - button "어두운 화면으로 전환":
+- complementary "안동 탐색":
+  - tablist "탐색 유형":
+    - tab "도시"
+    - tab "이어드림"
+    - tab "여행" [selected]
+  - region "혜택업체와 릴레이 지도 설정":
+    - group "지도에 표시할 정보":
+      - switch "관광주민증 혜택업체"
+      - generic: 관광주민증 혜택업체
+      - switch "릴레이 1·2·3단계 연결선" [checked]
+      - generic: 릴레이 1·2·3단계 연결선
+      - switch "야간 팝업 부스 9" [checked]
+      - generic: 야간 팝업 부스
+      - generic: "9"
+    - button "혜택업체 목록"
+    - button "표시한 위치 전체 보기"
+    - button "부스 9개 배치 보기":
+      - text: 부스 9개 배치 보기
+      - generic: ↗
+    - generic: 월영교 주변 · 기획 배치 시안
+    - generic "릴레이 단계":
+      - button "1 식음·체험 릴레이":
+        - generic: "1"
+        - generic: 식음·체험 릴레이
+      - button "2 저녁 이동 연결":
+        - generic: "2"
+        - generic: 저녁 이동 연결
+      - button "3 월영교 야간 체류":
+        - generic: "3"
+        - generic: 월영교 야간 체류
+  - tabpanel "여행":
+    - paragraph:
+      - text: 나의 안동 여행
+      - strong: 걷고, 타고, 혜택을 만나세요.
+    - button "공식 버스 노선·시간표"
+    - button "실제 사진으로 장소 둘러보기"
+    - generic "여행 적용안":
+      - button "현재"
+      - button "기본안" [pressed]
+      - button "확대안"
+    - text: 출발 거점
+    - combobox "출발 거점":
+      - generic: 원도심 · 안동구시장
+    - text: 출발 시각
+    - textbox "출발 시각": 17:00
+    - text: 들를 식당
+    - combobox "들를 식당":
+      - generic: 총각찜닭
+    - text: 체험 선택
+    - combobox "체험 선택":
+      - generic: 원도심 공예체험 거점 (제안)
+    - button "식당 정보 보기"
+    - button "체험 정보 보기"
+    - paragraph: 도보·차량 속도와 체류 시간은 시연 가정입니다. 장소 앞에서 멈추며, 정보를 확인하고 계속할 수 있습니다.
+    - generic: 기본안의 사업 규모
+    - strong: 식당 20곳 규모 가정
+    - generic: 지도 거점은 배치 제안입니다. 효과는 83곳 운영의 참여율별 비교를 보세요.
+    - button "현재·기본·확대 비교"
+    - button "혜택 배치 비교"
+    - generic "지도 기호":
+      - generic: 식음
+      - generic: 체험
+      - generic: 주민증 혜택
+      - generic: 추가 혜택
+      - generic: 도보
+      - generic: 차량
+    - paragraph: 작은 지도 기호를 누르면 장소 정보가 열립니다. 겹치는 지점은 확대해서 보거나 장소 목록에서 선택하세요.
+    - generic "귀가편 맞추기"
+    - paragraph: 예약한 열차 시각을 직접 입력하세요. 열차 시간표 조회·예약 기능은 아닙니다.
+    - text: 귀가 열차 출발
+    - textbox "귀가 열차 출발": 21:30
+    - text: 역 도착 여유 (분)
+    - spinbutton "역 도착 여유 (분)": "20"
+    - text: 월영교 → 안동역
+    - combobox "월영교 → 안동역":
+      - generic: 택시·차량 (시간 가정)
+    - text: 승차·이동 (분)
+    - spinbutton "승차·이동 (분)": "35"
+    - text: 대기·환승 (분)
+    - spinbutton "대기·환승 (분)": "10"
+    - paragraph: 정류장·승차 지점까지 도보 8분 가정. 버스 자료는 기점 출발표입니다. 월영교 승차 시각과 역 연결편은 공식 BIS에서 확인하세요.
+    - status:
+      - strong: 월영교에서 20:17까지 출발
+      - paragraph: 역 도착 21:10 · 열차 21:30
+      - text: 방문 종료 후 49분 여유
+      - paragraph: 택시·차량의 대기·이동 시간 가정
+    - generic "여행 순서 · 구간 바로 보기"
+    - generic "식당·체험·혜택 장소"
+    - generic "자료와 여행 가정"
+  - strong: 17:00 → 21:11
+  - generic: 기본안 · 5곳 방문 · 이동 13.9km · 귀가 포함
+  - button "이 코스 여행하기"
+- button "북쪽을 위로 정렬":
+- button "확대":
+- button "축소":
+- navigation "지도 조작":
+  - link "릴레이 체험 ↗":
+    - /url: "?experience=relay&play=1"
+  - button "안동 전체":
+    - text: 안동 전체
+  - button "자동 비행":
+    - text: 자동 비행
+  - button "평면 보기":
+    - text: 평면 보기
+  - button "지명" [pressed]:
+    - text: 지명
+  - button "전체 화면":
+    - text: 전체 화면
+- text: 안동의 실제 모습
+- complementary "지도에서 사업과 혜택 비교":
+  - generic: 이어드림 · 지도 비교
+  - button "전체 비교 ↗"
+  - button "현재"
+  - button "기본안" [pressed]
+  - button "확대안"
+  - generic: 시설 배치 비교
+  - strong: 참여 식당 20곳 가정
+  - generic: 최신 보고서 효과는 전체 비교에서 확인
+  - button "식음 → 체험"
+  - button "저녁 이동"
+  - button "월영교 팝업"
+  - paragraph: 식당 20곳 규모 가정 · 팝업 수량 미확정
+  - generic: 시설·군중·차량은 연출입니다. 주민증과 QR 인증은 별도로 집계합니다.
+- group "지도 위 식당·체험·혜택 지점":
+  - button "안동공예문화전시관 · 체험·관람 정보"
+  - button "월영교 동측 입구 · 여행 장소 정보"
+  - button "안동관 · 식당·카페 정보"
+  - button "안동김대감 · 식당·카페 정보"
+  - button "카페구름마루 · 주민증 혜택 정보"
+  - button "콩깍지 · 식당·카페 정보"
+- text: →
+- region "코스 미리보기":
+  - heading "오늘의 안동 여행" [level=2]
+  - paragraph: 17개 구간 · 구간을 누르면 그곳부터 여행합니다.
+  - button "코스 수정"
+  - button "이 코스 여행하기"
+  - button "1구간 · 17:00 원도심 · 안동구시장":
+    - time: 17:00
+    - text: 원도심 · 안동구시장
+  - button "2구간 · 17:03 식당으로 이동":
+    - time: 17:03
+    - text: 식당으로 이동
+  - button "3구간 · 17:06 총각찜닭":
+    - time: 17:06
+    - text: 총각찜닭
+  - button "4구간 · 17:51 원도심 공예체험 거점까지 걷기":
+    - time: 17:51
+    - text: 원도심 공예체험 거점까지 걷기
+  - button "5구간 · 17:54 원도심 공예체험 거점":
+    - time: 17:54
+    - text: 원도심 공예체험 거점
+  - button "6구간 · 18:24 월영교행 승차 지점까지 걷기":
+    - time: 18:24
+    - text: 월영교행 승차 지점까지 걷기
+  - button "7구간 · 18:26 신통의원":
+    - time: 18:26
+    - text: 신통의원
+  - button "8구간 · 18:30 월영교로 · 제안 저녁 이동":
+    - time: 18:30
+    - text: 월영교로 · 제안 저녁 이동
+  - button "9구간 · 18:40 월영교 서측 입구":
+    - time: 18:40
+    - text: 월영교 서측 입구
+  - button "10구간 · 18:43 월영교 위를 걷기":
+    - time: 18:43
+    - text: 월영교 위를 걷기
+  - button "11구간 · 18:49 월영교 동측 입구":
+    - time: 18:49
+    - text: 월영교 동측 입구
+  - button "12구간 · 18:54 월영교 서측으로 돌아오기":
+    - time: 18:54
+    - text: 월영교 서측으로 돌아오기
+  - button "13구간 · 19:00 야간 팝업으로":
+    - time: 19:00
+    - text: 야간 팝업으로
+  - button "14구간 · 19:03 월영교 야간 팝업":
+    - time: 19:03
+    - text: 월영교 야간 팝업
+  - button "15구간 · 19:28 귀가 출발 전 자유 시간":
+    - time: 19:28
+    - text: 귀가 출발 전 자유 시간
+  - button "16구간 · 20:17 안동역 복귀 · 가정한 차량 이동":
+    - time: 20:17
+    - text: 안동역 복귀 · 가정한 차량 이동
+  - button "17구간 · 21:10 안동역 도착 · 귀가편 준비":
+    - time: 21:10
+    - text: 안동역 도착 · 귀가편 준비
+- button "안동 전역"
+- button "도심 전체" [pressed]
+- button "원도심 상세"
+- button "월영교 상세"
+- group "관광주민증 혜택업체와 릴레이 단계 지도 표식":
+  - button "1단계 식음·체험 릴레이 지도 표식":
+    - generic: "1"
+    - generic: 식음·체험 릴레이 · 1단계
+  - button "2단계 저녁 이동 연결 지도 표식":
+    - generic: "2"
+    - generic: 저녁 이동 연결 · 2단계
+  - button "월영 밤마당 야간 팝업 9개 부스 지도 표식":
+    - generic: "9"
+    - generic: 월영 밤마당 · 야간 팝업 · 9개 부스 · 제안

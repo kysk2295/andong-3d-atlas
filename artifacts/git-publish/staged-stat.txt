@@ -1,0 +1,709 @@
+ README.md                                          |   17 +-
+ andong-atlas/.dockerignore                         |   12 +
+ andong-atlas/.env.example                          |    4 +
+ andong-atlas/.gitignore                            |   15 +
+ andong-atlas/.railwayignore                        |   11 +
+ andong-atlas/DESIGN.md                             |   53 +
+ andong-atlas/Dockerfile                            |   17 +
+ andong-atlas/QA.md                                 |  439 +++++
+ andong-atlas/README.md                             |  143 ++
+ andong-atlas/REFERENCE_COMPARISON.md               |  100 ++
+ andong-atlas/RELAY_IMPLEMENTATION.md               |  148 ++
+ andong-atlas/docs/ATTRIBUTIONS.md                  |   32 +
+ andong-atlas/docs/VIDEOS.md                        |   41 +
+ andong-atlas/docs/media/andong-overview.mp4        |  Bin 0 -> 27411058 bytes
+ andong-atlas/docs/media/andong-relay.mp4           |  Bin 0 -> 15434771 bytes
+ andong-atlas/docs/media/bridge-mobile.jpg          |  Bin 0 -> 25361 bytes
+ andong-atlas/docs/media/overview-poster.jpg        |  Bin 0 -> 43340 bytes
+ andong-atlas/docs/media/overview-preview.gif       |  Bin 0 -> 6635401 bytes
+ andong-atlas/docs/media/popup-mobile.jpg           |  Bin 0 -> 43130 bytes
+ andong-atlas/docs/media/relay-poster.jpg           |  Bin 0 -> 48858 bytes
+ andong-atlas/docs/media/restaurant.jpg             |  Bin 0 -> 104104 bytes
+ andong-atlas/index.html                            |  406 +++++
+ andong-atlas/package-lock.json                     | 1367 +++++++++++++++
+ andong-atlas/package.json                          |   26 +
+ .../assets/relay/document/stage-1-image1.webp      |  Bin 0 -> 107532 bytes
+ .../assets/relay/document/stage-1-image10.webp     |  Bin 0 -> 96472 bytes
+ .../assets/relay/document/stage-1-image11.webp     |  Bin 0 -> 157298 bytes
+ .../assets/relay/document/stage-1-image12.webp     |  Bin 0 -> 82368 bytes
+ .../assets/relay/document/stage-1-image13.webp     |  Bin 0 -> 171430 bytes
+ .../assets/relay/document/stage-1-image14.webp     |  Bin 0 -> 165628 bytes
+ .../assets/relay/document/stage-1-image15.webp     |  Bin 0 -> 224548 bytes
+ .../assets/relay/document/stage-1-image16.webp     |  Bin 0 -> 210952 bytes
+ .../assets/relay/document/stage-1-image17.webp     |  Bin 0 -> 74148 bytes
+ .../assets/relay/document/stage-1-image18.webp     |  Bin 0 -> 175550 bytes
+ .../assets/relay/document/stage-1-image2.webp      |  Bin 0 -> 80008 bytes
+ .../assets/relay/document/stage-1-image3.webp      |  Bin 0 -> 121496 bytes
+ .../assets/relay/document/stage-1-image4.webp      |  Bin 0 -> 338312 bytes
+ .../assets/relay/document/stage-1-image5.webp      |  Bin 0 -> 31964 bytes
+ .../assets/relay/document/stage-1-image6.webp      |  Bin 0 -> 73058 bytes
+ .../assets/relay/document/stage-1-image7.webp      |  Bin 0 -> 94502 bytes
+ .../assets/relay/document/stage-1-image8.webp      |  Bin 0 -> 192804 bytes
+ .../assets/relay/document/stage-1-image9.webp      |  Bin 0 -> 67638 bytes
+ .../assets/relay/document/stage-2-image1.webp      |  Bin 0 -> 8306 bytes
+ .../assets/relay/document/stage-2-image10.webp     |  Bin 0 -> 252954 bytes
+ .../assets/relay/document/stage-2-image11.webp     |  Bin 0 -> 172174 bytes
+ .../assets/relay/document/stage-2-image2.webp      |  Bin 0 -> 100846 bytes
+ .../assets/relay/document/stage-2-image3.webp      |  Bin 0 -> 112708 bytes
+ .../assets/relay/document/stage-2-image4.webp      |  Bin 0 -> 42280 bytes
+ .../assets/relay/document/stage-2-image5.webp      |  Bin 0 -> 18994 bytes
+ .../assets/relay/document/stage-2-image6.webp      |  Bin 0 -> 311638 bytes
+ .../assets/relay/document/stage-2-image7.webp      |  Bin 0 -> 100460 bytes
+ .../assets/relay/document/stage-2-image8.webp      |  Bin 0 -> 55092 bytes
+ .../assets/relay/document/stage-2-image9.webp      |  Bin 0 -> 10526 bytes
+ .../assets/relay/document/stage-3-image1.webp      |  Bin 0 -> 13242 bytes
+ .../assets/relay/document/stage-3-image10.webp     |  Bin 0 -> 139750 bytes
+ .../assets/relay/document/stage-3-image11.webp     |  Bin 0 -> 51018 bytes
+ .../assets/relay/document/stage-3-image12.webp     |  Bin 0 -> 73456 bytes
+ .../assets/relay/document/stage-3-image13.webp     |  Bin 0 -> 22184 bytes
+ .../assets/relay/document/stage-3-image14.webp     |  Bin 0 -> 138210 bytes
+ .../assets/relay/document/stage-3-image15.webp     |  Bin 0 -> 57686 bytes
+ .../assets/relay/document/stage-3-image16.webp     |  Bin 0 -> 41454 bytes
+ .../assets/relay/document/stage-3-image17.webp     |  Bin 0 -> 43160 bytes
+ .../assets/relay/document/stage-3-image18.webp     |  Bin 0 -> 50534 bytes
+ .../assets/relay/document/stage-3-image19.webp     |  Bin 0 -> 137536 bytes
+ .../assets/relay/document/stage-3-image2.webp      |  Bin 0 -> 39114 bytes
+ .../assets/relay/document/stage-3-image20.webp     |  Bin 0 -> 11538 bytes
+ .../assets/relay/document/stage-3-image21.webp     |  Bin 0 -> 150796 bytes
+ .../assets/relay/document/stage-3-image22.webp     |  Bin 0 -> 19848 bytes
+ .../assets/relay/document/stage-3-image23.webp     |  Bin 0 -> 14036 bytes
+ .../assets/relay/document/stage-3-image24.webp     |  Bin 0 -> 41676 bytes
+ .../assets/relay/document/stage-3-image25.webp     |  Bin 0 -> 136386 bytes
+ .../assets/relay/document/stage-3-image26.webp     |  Bin 0 -> 50180 bytes
+ .../assets/relay/document/stage-3-image27.webp     |  Bin 0 -> 72186 bytes
+ .../assets/relay/document/stage-3-image3.webp      |  Bin 0 -> 10714 bytes
+ .../assets/relay/document/stage-3-image4.webp      |  Bin 0 -> 18946 bytes
+ .../assets/relay/document/stage-3-image5.webp      |  Bin 0 -> 123256 bytes
+ .../assets/relay/document/stage-3-image6.webp      |  Bin 0 -> 52200 bytes
+ .../assets/relay/document/stage-3-image7.webp      |  Bin 0 -> 29214 bytes
+ .../assets/relay/document/stage-3-image8.webp      |  Bin 0 -> 9686 bytes
+ .../assets/relay/document/stage-3-image9.webp      |  Bin 0 -> 20748 bytes
+ .../assets/relay/document/stage-4-image1.webp      |  Bin 0 -> 99230 bytes
+ .../assets/relay/document/stage-4-image10.webp     |  Bin 0 -> 191564 bytes
+ .../assets/relay/document/stage-4-image11.webp     |  Bin 0 -> 53500 bytes
+ .../assets/relay/document/stage-4-image12.webp     |  Bin 0 -> 132204 bytes
+ .../assets/relay/document/stage-4-image13.webp     |  Bin 0 -> 70836 bytes
+ .../assets/relay/document/stage-4-image14.webp     |  Bin 0 -> 56542 bytes
+ .../assets/relay/document/stage-4-image15.webp     |  Bin 0 -> 98028 bytes
+ .../assets/relay/document/stage-4-image16.webp     |  Bin 0 -> 66824 bytes
+ .../assets/relay/document/stage-4-image17.webp     |  Bin 0 -> 56376 bytes
+ .../assets/relay/document/stage-4-image18.webp     |  Bin 0 -> 64406 bytes
+ .../assets/relay/document/stage-4-image19.webp     |  Bin 0 -> 57802 bytes
+ .../assets/relay/document/stage-4-image2.webp      |  Bin 0 -> 99968 bytes
+ .../assets/relay/document/stage-4-image20.webp     |  Bin 0 -> 70938 bytes
+ .../assets/relay/document/stage-4-image21.webp     |  Bin 0 -> 49988 bytes
+ .../assets/relay/document/stage-4-image22.webp     |  Bin 0 -> 57094 bytes
+ .../assets/relay/document/stage-4-image23.webp     |  Bin 0 -> 92032 bytes
+ .../assets/relay/document/stage-4-image24.webp     |  Bin 0 -> 87606 bytes
+ .../assets/relay/document/stage-4-image25.webp     |  Bin 0 -> 79202 bytes
+ .../assets/relay/document/stage-4-image26.webp     |  Bin 0 -> 71220 bytes
+ .../assets/relay/document/stage-4-image27.webp     |  Bin 0 -> 73176 bytes
+ .../assets/relay/document/stage-4-image28.webp     |  Bin 0 -> 29186 bytes
+ .../assets/relay/document/stage-4-image29.webp     |  Bin 0 -> 42094 bytes
+ .../assets/relay/document/stage-4-image3.webp      |  Bin 0 -> 67102 bytes
+ .../assets/relay/document/stage-4-image30.webp     |  Bin 0 -> 68310 bytes
+ .../assets/relay/document/stage-4-image31.webp     |  Bin 0 -> 55846 bytes
+ .../assets/relay/document/stage-4-image32.webp     |  Bin 0 -> 54900 bytes
+ .../assets/relay/document/stage-4-image33.webp     |  Bin 0 -> 81910 bytes
+ .../assets/relay/document/stage-4-image34.webp     |  Bin 0 -> 48574 bytes
+ .../assets/relay/document/stage-4-image35.webp     |  Bin 0 -> 63490 bytes
+ .../assets/relay/document/stage-4-image36.webp     |  Bin 0 -> 60280 bytes
+ .../assets/relay/document/stage-4-image37.webp     |  Bin 0 -> 55500 bytes
+ .../assets/relay/document/stage-4-image38.webp     |  Bin 0 -> 274142 bytes
+ .../assets/relay/document/stage-4-image39.webp     |  Bin 0 -> 48176 bytes
+ .../assets/relay/document/stage-4-image4.webp      |  Bin 0 -> 54444 bytes
+ .../assets/relay/document/stage-4-image40.webp     |  Bin 0 -> 33782 bytes
+ .../assets/relay/document/stage-4-image41.webp     |  Bin 0 -> 424816 bytes
+ .../assets/relay/document/stage-4-image42.webp     |  Bin 0 -> 89160 bytes
+ .../assets/relay/document/stage-4-image43.webp     |  Bin 0 -> 43942 bytes
+ .../assets/relay/document/stage-4-image44.webp     |  Bin 0 -> 41328 bytes
+ .../assets/relay/document/stage-4-image45.webp     |  Bin 0 -> 58764 bytes
+ .../assets/relay/document/stage-4-image46.webp     |  Bin 0 -> 76082 bytes
+ .../assets/relay/document/stage-4-image47.webp     |  Bin 0 -> 82590 bytes
+ .../assets/relay/document/stage-4-image48.webp     |  Bin 0 -> 58058 bytes
+ .../assets/relay/document/stage-4-image49.webp     |  Bin 0 -> 98070 bytes
+ .../assets/relay/document/stage-4-image5.webp      |  Bin 0 -> 22694 bytes
+ .../assets/relay/document/stage-4-image50.webp     |  Bin 0 -> 39174 bytes
+ .../assets/relay/document/stage-4-image51.webp     |  Bin 0 -> 54342 bytes
+ .../assets/relay/document/stage-4-image52.webp     |  Bin 0 -> 98354 bytes
+ .../assets/relay/document/stage-4-image53.webp     |  Bin 0 -> 78022 bytes
+ .../assets/relay/document/stage-4-image54.webp     |  Bin 0 -> 135958 bytes
+ .../assets/relay/document/stage-4-image55.webp     |  Bin 0 -> 45912 bytes
+ .../assets/relay/document/stage-4-image56.webp     |  Bin 0 -> 68040 bytes
+ .../assets/relay/document/stage-4-image57.webp     |  Bin 0 -> 61376 bytes
+ .../assets/relay/document/stage-4-image58.webp     |  Bin 0 -> 406308 bytes
+ .../assets/relay/document/stage-4-image6.webp      |  Bin 0 -> 102104 bytes
+ .../assets/relay/document/stage-4-image7.webp      |  Bin 0 -> 79316 bytes
+ .../assets/relay/document/stage-4-image8.webp      |  Bin 0 -> 58442 bytes
+ .../assets/relay/document/stage-4-image9.webp      |  Bin 0 -> 57304 bytes
+ .../relay/document/thumb-stage-1-image1.webp       |  Bin 0 -> 23432 bytes
+ .../relay/document/thumb-stage-1-image10.webp      |  Bin 0 -> 23116 bytes
+ .../relay/document/thumb-stage-1-image11.webp      |  Bin 0 -> 17428 bytes
+ .../relay/document/thumb-stage-1-image12.webp      |  Bin 0 -> 15082 bytes
+ .../relay/document/thumb-stage-1-image13.webp      |  Bin 0 -> 26246 bytes
+ .../relay/document/thumb-stage-1-image14.webp      |  Bin 0 -> 25844 bytes
+ .../relay/document/thumb-stage-1-image15.webp      |  Bin 0 -> 25438 bytes
+ .../relay/document/thumb-stage-1-image16.webp      |  Bin 0 -> 26020 bytes
+ .../relay/document/thumb-stage-1-image17.webp      |  Bin 0 -> 8140 bytes
+ .../relay/document/thumb-stage-1-image18.webp      |  Bin 0 -> 22046 bytes
+ .../relay/document/thumb-stage-1-image2.webp       |  Bin 0 -> 15894 bytes
+ .../relay/document/thumb-stage-1-image3.webp       |  Bin 0 -> 29712 bytes
+ .../relay/document/thumb-stage-1-image4.webp       |  Bin 0 -> 29710 bytes
+ .../relay/document/thumb-stage-1-image5.webp       |  Bin 0 -> 4988 bytes
+ .../relay/document/thumb-stage-1-image6.webp       |  Bin 0 -> 10084 bytes
+ .../relay/document/thumb-stage-1-image7.webp       |  Bin 0 -> 23806 bytes
+ .../relay/document/thumb-stage-1-image8.webp       |  Bin 0 -> 13748 bytes
+ .../relay/document/thumb-stage-1-image9.webp       |  Bin 0 -> 16376 bytes
+ .../relay/document/thumb-stage-2-image1.webp       |  Bin 0 -> 3712 bytes
+ .../relay/document/thumb-stage-2-image10.webp      |  Bin 0 -> 19982 bytes
+ .../relay/document/thumb-stage-2-image11.webp      |  Bin 0 -> 17160 bytes
+ .../relay/document/thumb-stage-2-image2.webp       |  Bin 0 -> 10606 bytes
+ .../relay/document/thumb-stage-2-image3.webp       |  Bin 0 -> 15336 bytes
+ .../relay/document/thumb-stage-2-image4.webp       |  Bin 0 -> 6514 bytes
+ .../relay/document/thumb-stage-2-image5.webp       |  Bin 0 -> 6924 bytes
+ .../relay/document/thumb-stage-2-image6.webp       |  Bin 0 -> 21842 bytes
+ .../relay/document/thumb-stage-2-image7.webp       |  Bin 0 -> 12318 bytes
+ .../relay/document/thumb-stage-2-image8.webp       |  Bin 0 -> 3910 bytes
+ .../relay/document/thumb-stage-2-image9.webp       |  Bin 0 -> 1026 bytes
+ .../relay/document/thumb-stage-3-image1.webp       |  Bin 0 -> 10278 bytes
+ .../relay/document/thumb-stage-3-image10.webp      |  Bin 0 -> 23516 bytes
+ .../relay/document/thumb-stage-3-image11.webp      |  Bin 0 -> 19894 bytes
+ .../relay/document/thumb-stage-3-image12.webp      |  Bin 0 -> 20170 bytes
+ .../relay/document/thumb-stage-3-image13.webp      |  Bin 0 -> 7186 bytes
+ .../relay/document/thumb-stage-3-image14.webp      |  Bin 0 -> 21542 bytes
+ .../relay/document/thumb-stage-3-image15.webp      |  Bin 0 -> 23042 bytes
+ .../relay/document/thumb-stage-3-image16.webp      |  Bin 0 -> 20710 bytes
+ .../relay/document/thumb-stage-3-image17.webp      |  Bin 0 -> 21124 bytes
+ .../relay/document/thumb-stage-3-image18.webp      |  Bin 0 -> 21946 bytes
+ .../relay/document/thumb-stage-3-image19.webp      |  Bin 0 -> 21206 bytes
+ .../relay/document/thumb-stage-3-image2.webp       |  Bin 0 -> 21076 bytes
+ .../relay/document/thumb-stage-3-image20.webp      |  Bin 0 -> 4700 bytes
+ .../relay/document/thumb-stage-3-image21.webp      |  Bin 0 -> 26824 bytes
+ .../relay/document/thumb-stage-3-image22.webp      |  Bin 0 -> 6640 bytes
+ .../relay/document/thumb-stage-3-image23.webp      |  Bin 0 -> 10138 bytes
+ .../relay/document/thumb-stage-3-image24.webp      |  Bin 0 -> 13604 bytes
+ .../relay/document/thumb-stage-3-image25.webp      |  Bin 0 -> 21506 bytes
+ .../relay/document/thumb-stage-3-image26.webp      |  Bin 0 -> 14498 bytes
+ .../relay/document/thumb-stage-3-image27.webp      |  Bin 0 -> 18426 bytes
+ .../relay/document/thumb-stage-3-image3.webp       |  Bin 0 -> 7606 bytes
+ .../relay/document/thumb-stage-3-image4.webp       |  Bin 0 -> 14324 bytes
+ .../relay/document/thumb-stage-3-image5.webp       |  Bin 0 -> 17766 bytes
+ .../relay/document/thumb-stage-3-image6.webp       |  Bin 0 -> 10880 bytes
+ .../relay/document/thumb-stage-3-image7.webp       |  Bin 0 -> 7648 bytes
+ .../relay/document/thumb-stage-3-image8.webp       |  Bin 0 -> 6720 bytes
+ .../relay/document/thumb-stage-3-image9.webp       |  Bin 0 -> 7412 bytes
+ .../relay/document/thumb-stage-4-image1.webp       |  Bin 0 -> 26896 bytes
+ .../relay/document/thumb-stage-4-image10.webp      |  Bin 0 -> 20638 bytes
+ .../relay/document/thumb-stage-4-image11.webp      |  Bin 0 -> 19174 bytes
+ .../relay/document/thumb-stage-4-image12.webp      |  Bin 0 -> 18854 bytes
+ .../relay/document/thumb-stage-4-image13.webp      |  Bin 0 -> 22606 bytes
+ .../relay/document/thumb-stage-4-image14.webp      |  Bin 0 -> 17324 bytes
+ .../relay/document/thumb-stage-4-image15.webp      |  Bin 0 -> 21540 bytes
+ .../relay/document/thumb-stage-4-image16.webp      |  Bin 0 -> 20468 bytes
+ .../relay/document/thumb-stage-4-image17.webp      |  Bin 0 -> 22666 bytes
+ .../relay/document/thumb-stage-4-image18.webp      |  Bin 0 -> 16096 bytes
+ .../relay/document/thumb-stage-4-image19.webp      |  Bin 0 -> 18318 bytes
+ .../relay/document/thumb-stage-4-image2.webp       |  Bin 0 -> 28556 bytes
+ .../relay/document/thumb-stage-4-image20.webp      |  Bin 0 -> 15348 bytes
+ .../relay/document/thumb-stage-4-image21.webp      |  Bin 0 -> 12176 bytes
+ .../relay/document/thumb-stage-4-image22.webp      |  Bin 0 -> 22902 bytes
+ .../relay/document/thumb-stage-4-image23.webp      |  Bin 0 -> 21158 bytes
+ .../relay/document/thumb-stage-4-image24.webp      |  Bin 0 -> 18282 bytes
+ .../relay/document/thumb-stage-4-image25.webp      |  Bin 0 -> 26470 bytes
+ .../relay/document/thumb-stage-4-image26.webp      |  Bin 0 -> 21132 bytes
+ .../relay/document/thumb-stage-4-image27.webp      |  Bin 0 -> 17844 bytes
+ .../relay/document/thumb-stage-4-image28.webp      |  Bin 0 -> 12854 bytes
+ .../relay/document/thumb-stage-4-image29.webp      |  Bin 0 -> 16076 bytes
+ .../relay/document/thumb-stage-4-image3.webp       |  Bin 0 -> 32672 bytes
+ .../relay/document/thumb-stage-4-image30.webp      |  Bin 0 -> 17556 bytes
+ .../relay/document/thumb-stage-4-image31.webp      |  Bin 0 -> 17232 bytes
+ .../relay/document/thumb-stage-4-image32.webp      |  Bin 0 -> 14650 bytes
+ .../relay/document/thumb-stage-4-image33.webp      |  Bin 0 -> 30350 bytes
+ .../relay/document/thumb-stage-4-image34.webp      |  Bin 0 -> 22296 bytes
+ .../relay/document/thumb-stage-4-image35.webp      |  Bin 0 -> 27608 bytes
+ .../relay/document/thumb-stage-4-image36.webp      |  Bin 0 -> 19280 bytes
+ .../relay/document/thumb-stage-4-image37.webp      |  Bin 0 -> 14472 bytes
+ .../relay/document/thumb-stage-4-image38.webp      |  Bin 0 -> 22698 bytes
+ .../relay/document/thumb-stage-4-image39.webp      |  Bin 0 -> 13554 bytes
+ .../relay/document/thumb-stage-4-image4.webp       |  Bin 0 -> 26036 bytes
+ .../relay/document/thumb-stage-4-image40.webp      |  Bin 0 -> 14152 bytes
+ .../relay/document/thumb-stage-4-image41.webp      |  Bin 0 -> 21618 bytes
+ .../relay/document/thumb-stage-4-image42.webp      |  Bin 0 -> 23360 bytes
+ .../relay/document/thumb-stage-4-image43.webp      |  Bin 0 -> 18028 bytes
+ .../relay/document/thumb-stage-4-image44.webp      |  Bin 0 -> 12398 bytes
+ .../relay/document/thumb-stage-4-image45.webp      |  Bin 0 -> 16134 bytes
+ .../relay/document/thumb-stage-4-image46.webp      |  Bin 0 -> 17004 bytes
+ .../relay/document/thumb-stage-4-image47.webp      |  Bin 0 -> 10868 bytes
+ .../relay/document/thumb-stage-4-image48.webp      |  Bin 0 -> 18872 bytes
+ .../relay/document/thumb-stage-4-image49.webp      |  Bin 0 -> 23270 bytes
+ .../relay/document/thumb-stage-4-image5.webp       |  Bin 0 -> 9674 bytes
+ .../relay/document/thumb-stage-4-image50.webp      |  Bin 0 -> 8922 bytes
+ .../relay/document/thumb-stage-4-image51.webp      |  Bin 0 -> 26584 bytes
+ .../relay/document/thumb-stage-4-image52.webp      |  Bin 0 -> 24712 bytes
+ .../relay/document/thumb-stage-4-image53.webp      |  Bin 0 -> 21436 bytes
+ .../relay/document/thumb-stage-4-image54.webp      |  Bin 0 -> 15254 bytes
+ .../relay/document/thumb-stage-4-image55.webp      |  Bin 0 -> 12958 bytes
+ .../relay/document/thumb-stage-4-image56.webp      |  Bin 0 -> 13250 bytes
+ .../relay/document/thumb-stage-4-image57.webp      |  Bin 0 -> 15678 bytes
+ .../relay/document/thumb-stage-4-image58.webp      |  Bin 0 -> 23784 bytes
+ .../relay/document/thumb-stage-4-image6.webp       |  Bin 0 -> 25604 bytes
+ .../relay/document/thumb-stage-4-image7.webp       |  Bin 0 -> 24052 bytes
+ .../relay/document/thumb-stage-4-image8.webp       |  Bin 0 -> 20266 bytes
+ .../relay/document/thumb-stage-4-image9.webp       |  Bin 0 -> 15236 bytes
+ .../relay/materials/brick_wall_001_diffuse.jpg     |  Bin 0 -> 574381 bytes
+ .../relay/materials/brick_wall_001_nor_gl.jpg      |  Bin 0 -> 295279 bytes
+ .../relay/materials/brick_wall_001_rough.jpg       |  Bin 0 -> 211093 bytes
+ .../relay/materials/clay_plaster_diffuse.jpg       |  Bin 0 -> 354209 bytes
+ .../assets/relay/materials/clay_plaster_nor_gl.jpg |  Bin 0 -> 784921 bytes
+ .../assets/relay/materials/clay_plaster_rough.jpg  |  Bin 0 -> 345709 bytes
+ .../materials/cobblestone_floor_02_diffuse.jpg     |  Bin 0 -> 221882 bytes
+ .../materials/cobblestone_floor_02_nor_gl.jpg      |  Bin 0 -> 208641 bytes
+ .../relay/materials/cobblestone_floor_02_rough.jpg |  Bin 0 -> 163268 bytes
+ .../relay/materials/fabric_pattern_05_diffuse.jpg  |  Bin 0 -> 797220 bytes
+ .../relay/materials/fabric_pattern_05_nor_gl.jpg   |  Bin 0 -> 903085 bytes
+ .../relay/materials/fabric_pattern_05_rough.jpg    |  Bin 0 -> 438194 bytes
+ .../relay/materials/forest_ground_04_diffuse.jpg   |  Bin 0 -> 1113899 bytes
+ .../relay/materials/forest_ground_04_nor_gl.jpg    |  Bin 0 -> 1326812 bytes
+ .../relay/materials/forest_ground_04_rough.jpg     |  Bin 0 -> 627507 bytes
+ .../assets/relay/materials/pine_bark_diffuse.jpg   |  Bin 0 -> 2700448 bytes
+ .../assets/relay/materials/pine_bark_nor_gl.jpg    |  Bin 0 -> 1016849 bytes
+ .../assets/relay/materials/pine_bark_rough.jpg     |  Bin 0 -> 611111 bytes
+ .../assets/relay/materials/pine_needles_alpha.jpg  |  Bin 0 -> 543197 bytes
+ .../relay/materials/pine_needles_diffuse.jpg       |  Bin 0 -> 1623201 bytes
+ .../assets/relay/materials/pine_needles_nor_gl.jpg |  Bin 0 -> 797935 bytes
+ .../assets/relay/materials/pine_needles_rough.jpg  |  Bin 0 -> 391582 bytes
+ .../materials/qwantani_night_puresky_hdri.hdr      |  Bin 0 -> 5461210 bytes
+ .../materials/qwantani_sunset_puresky_hdri.hdr     |  Bin 0 -> 1061624 bytes
+ .../relay/materials/square_tiles_diffuse.jpg       |  Bin 0 -> 992814 bytes
+ .../assets/relay/materials/square_tiles_nor_gl.jpg |  Bin 0 -> 799559 bytes
+ .../assets/relay/materials/square_tiles_rough.jpg  |  Bin 0 -> 444960 bytes
+ .../relay/materials/studio_small_09_hdri.hdr       |  Bin 0 -> 1615248 bytes
+ .../assets/relay/materials/wood_floor_diffuse.jpg  |  Bin 0 -> 734493 bytes
+ .../assets/relay/materials/wood_floor_nor_gl.jpg   |  Bin 0 -> 423303 bytes
+ .../assets/relay/materials/wood_floor_rough.jpg    |  Bin 0 -> 527754 bytes
+ .../assets/relay/materials/wood_table_diffuse.jpg  |  Bin 0 -> 987969 bytes
+ .../assets/relay/materials/wood_table_nor_gl.jpg   |  Bin 0 -> 625535 bytes
+ .../assets/relay/materials/wood_table_rough.jpg    |  Bin 0 -> 618983 bytes
+ .../textures/wooden_bowl_01_arm_1k.jpg             |  Bin 0 -> 451613 bytes
+ .../textures/wooden_bowl_01_diff_1k.jpg            |  Bin 0 -> 450565 bytes
+ .../textures/wooden_bowl_01_nor_gl_1k.jpg          |  Bin 0 -> 597196 bytes
+ .../relay/models/wooden_bowl_01/wooden_bowl_01.bin |  Bin 0 -> 321052 bytes
+ .../models/wooden_bowl_01/wooden_bowl_01.gltf      |  160 ++
+ andong-atlas/public/data/analysis.json             | 1003 +++++++++++
+ andong-atlas/public/data/boundaries.json           |    1 +
+ andong-atlas/public/data/buildings.json            |    1 +
+ andong-atlas/public/data/buildings.json.gz         |  Bin 0 -> 2515545 bytes
+ andong-atlas/public/data/district.json             |    1 +
+ andong-atlas/public/data/district.json.gz          |  Bin 0 -> 230576 bytes
+ andong-atlas/public/data/facilities.json           |    1 +
+ andong-atlas/public/data/heritage-media.json       |  481 ++++++
+ andong-atlas/public/data/journey.json              |    1 +
+ andong-atlas/public/data/journey.json.gz           |  Bin 0 -> 534551 bytes
+ andong-atlas/public/data/manifest.json             |   47 +
+ andong-atlas/public/data/map.json                  |    1 +
+ andong-atlas/public/data/map.json.gz               |  Bin 0 -> 4336726 bytes
+ andong-atlas/public/data/place-media.json          |  197 +++
+ andong-atlas/public/data/regions.json              |    1 +
+ andong-atlas/public/data/regions/area-0-4.json     |    1 +
+ andong-atlas/public/data/regions/area-0-4.json.gz  |  Bin 0 -> 101699 bytes
+ andong-atlas/public/data/regions/area-0-5.json     |    1 +
+ andong-atlas/public/data/regions/area-0-5.json.gz  |  Bin 0 -> 126125 bytes
+ andong-atlas/public/data/regions/area-0-6.json     |    1 +
+ andong-atlas/public/data/regions/area-0-6.json.gz  |  Bin 0 -> 130658 bytes
+ andong-atlas/public/data/regions/area-1-4.json     |    1 +
+ andong-atlas/public/data/regions/area-1-4.json.gz  |  Bin 0 -> 99485 bytes
+ andong-atlas/public/data/regions/area-1-5.json     |    1 +
+ andong-atlas/public/data/regions/area-1-5.json.gz  |  Bin 0 -> 133479 bytes
+ andong-atlas/public/data/regions/area-1-6.json     |    1 +
+ andong-atlas/public/data/regions/area-1-6.json.gz  |  Bin 0 -> 157623 bytes
+ andong-atlas/public/data/regions/area-1-7.json     |    1 +
+ andong-atlas/public/data/regions/area-1-7.json.gz  |  Bin 0 -> 124391 bytes
+ andong-atlas/public/data/regions/area-10-10.json   |    1 +
+ .../public/data/regions/area-10-10.json.gz         |  Bin 0 -> 75413 bytes
+ andong-atlas/public/data/regions/area-10-2.json    |    1 +
+ andong-atlas/public/data/regions/area-10-2.json.gz |  Bin 0 -> 80059 bytes
+ andong-atlas/public/data/regions/area-10-3.json    |    1 +
+ andong-atlas/public/data/regions/area-10-3.json.gz |  Bin 0 -> 80810 bytes
+ andong-atlas/public/data/regions/area-10-4.json    |    1 +
+ andong-atlas/public/data/regions/area-10-4.json.gz |  Bin 0 -> 80759 bytes
+ andong-atlas/public/data/regions/area-10-5.json    |    1 +
+ andong-atlas/public/data/regions/area-10-5.json.gz |  Bin 0 -> 81655 bytes
+ andong-atlas/public/data/regions/area-10-6.json    |    1 +
+ andong-atlas/public/data/regions/area-10-6.json.gz |  Bin 0 -> 78718 bytes
+ andong-atlas/public/data/regions/area-10-7.json    |    1 +
+ andong-atlas/public/data/regions/area-10-7.json.gz |  Bin 0 -> 81988 bytes
+ andong-atlas/public/data/regions/area-10-8.json    |    1 +
+ andong-atlas/public/data/regions/area-10-8.json.gz |  Bin 0 -> 76002 bytes
+ andong-atlas/public/data/regions/area-10-9.json    |    1 +
+ andong-atlas/public/data/regions/area-10-9.json.gz |  Bin 0 -> 73003 bytes
+ andong-atlas/public/data/regions/area-2-3.json     |    1 +
+ andong-atlas/public/data/regions/area-2-3.json.gz  |  Bin 0 -> 99349 bytes
+ andong-atlas/public/data/regions/area-2-4.json     |    1 +
+ andong-atlas/public/data/regions/area-2-4.json.gz  |  Bin 0 -> 102951 bytes
+ andong-atlas/public/data/regions/area-2-5.json     |    1 +
+ andong-atlas/public/data/regions/area-2-5.json.gz  |  Bin 0 -> 102957 bytes
+ andong-atlas/public/data/regions/area-2-6.json     |    1 +
+ andong-atlas/public/data/regions/area-2-6.json.gz  |  Bin 0 -> 145423 bytes
+ andong-atlas/public/data/regions/area-2-7.json     |    1 +
+ andong-atlas/public/data/regions/area-2-7.json.gz  |  Bin 0 -> 131485 bytes
+ andong-atlas/public/data/regions/area-2-8.json     |    1 +
+ andong-atlas/public/data/regions/area-2-8.json.gz  |  Bin 0 -> 112513 bytes
+ andong-atlas/public/data/regions/area-3-2.json     |    1 +
+ andong-atlas/public/data/regions/area-3-2.json.gz  |  Bin 0 -> 95758 bytes
+ andong-atlas/public/data/regions/area-3-3.json     |    1 +
+ andong-atlas/public/data/regions/area-3-3.json.gz  |  Bin 0 -> 99555 bytes
+ andong-atlas/public/data/regions/area-3-4.json     |    1 +
+ andong-atlas/public/data/regions/area-3-4.json.gz  |  Bin 0 -> 104721 bytes
+ andong-atlas/public/data/regions/area-3-5.json     |    1 +
+ andong-atlas/public/data/regions/area-3-5.json.gz  |  Bin 0 -> 101645 bytes
+ andong-atlas/public/data/regions/area-3-6.json     |    1 +
+ andong-atlas/public/data/regions/area-3-6.json.gz  |  Bin 0 -> 133662 bytes
+ andong-atlas/public/data/regions/area-3-7.json     |    1 +
+ andong-atlas/public/data/regions/area-3-7.json.gz  |  Bin 0 -> 114679 bytes
+ andong-atlas/public/data/regions/area-3-8.json     |    1 +
+ andong-atlas/public/data/regions/area-3-8.json.gz  |  Bin 0 -> 123174 bytes
+ andong-atlas/public/data/regions/area-3-9.json     |    1 +
+ andong-atlas/public/data/regions/area-3-9.json.gz  |  Bin 0 -> 134018 bytes
+ andong-atlas/public/data/regions/area-4-3.json     |    1 +
+ andong-atlas/public/data/regions/area-4-3.json.gz  |  Bin 0 -> 119223 bytes
+ andong-atlas/public/data/regions/area-4-4.json     |    1 +
+ andong-atlas/public/data/regions/area-4-4.json.gz  |  Bin 0 -> 134806 bytes
+ andong-atlas/public/data/regions/area-4-5.json     |    1 +
+ andong-atlas/public/data/regions/area-4-5.json.gz  |  Bin 0 -> 126212 bytes
+ andong-atlas/public/data/regions/area-4-6.json     |    1 +
+ andong-atlas/public/data/regions/area-4-6.json.gz  |  Bin 0 -> 150118 bytes
+ andong-atlas/public/data/regions/area-4-7.json     |    1 +
+ andong-atlas/public/data/regions/area-4-7.json.gz  |  Bin 0 -> 136016 bytes
+ andong-atlas/public/data/regions/area-4-8.json     |    1 +
+ andong-atlas/public/data/regions/area-4-8.json.gz  |  Bin 0 -> 131115 bytes
+ andong-atlas/public/data/regions/area-4-9.json     |    1 +
+ andong-atlas/public/data/regions/area-4-9.json.gz  |  Bin 0 -> 114997 bytes
+ andong-atlas/public/data/regions/area-5-10.json    |    1 +
+ andong-atlas/public/data/regions/area-5-10.json.gz |  Bin 0 -> 116518 bytes
+ andong-atlas/public/data/regions/area-5-11.json    |    1 +
+ andong-atlas/public/data/regions/area-5-11.json.gz |  Bin 0 -> 115847 bytes
+ andong-atlas/public/data/regions/area-5-3.json     |    1 +
+ andong-atlas/public/data/regions/area-5-3.json.gz  |  Bin 0 -> 114985 bytes
+ andong-atlas/public/data/regions/area-5-4.json     |    1 +
+ andong-atlas/public/data/regions/area-5-4.json.gz  |  Bin 0 -> 101278 bytes
+ andong-atlas/public/data/regions/area-5-5.json     |    1 +
+ andong-atlas/public/data/regions/area-5-5.json.gz  |  Bin 0 -> 156319 bytes
+ andong-atlas/public/data/regions/area-5-6.json     |    1 +
+ andong-atlas/public/data/regions/area-5-6.json.gz  |  Bin 0 -> 292956 bytes
+ andong-atlas/public/data/regions/area-5-7.json     |    1 +
+ andong-atlas/public/data/regions/area-5-7.json.gz  |  Bin 0 -> 148549 bytes
+ andong-atlas/public/data/regions/area-5-8.json     |    1 +
+ andong-atlas/public/data/regions/area-5-8.json.gz  |  Bin 0 -> 140334 bytes
+ andong-atlas/public/data/regions/area-5-9.json     |    1 +
+ andong-atlas/public/data/regions/area-5-9.json.gz  |  Bin 0 -> 122037 bytes
+ andong-atlas/public/data/regions/area-6-10.json    |    1 +
+ andong-atlas/public/data/regions/area-6-10.json.gz |  Bin 0 -> 117913 bytes
+ andong-atlas/public/data/regions/area-6-11.json    |    1 +
+ andong-atlas/public/data/regions/area-6-11.json.gz |  Bin 0 -> 125496 bytes
+ andong-atlas/public/data/regions/area-6-3.json     |    1 +
+ andong-atlas/public/data/regions/area-6-3.json.gz  |  Bin 0 -> 112352 bytes
+ andong-atlas/public/data/regions/area-6-4.json     |    1 +
+ andong-atlas/public/data/regions/area-6-4.json.gz  |  Bin 0 -> 97622 bytes
+ andong-atlas/public/data/regions/area-6-5.json     |    1 +
+ andong-atlas/public/data/regions/area-6-5.json.gz  |  Bin 0 -> 154850 bytes
+ andong-atlas/public/data/regions/area-6-6.json     |    1 +
+ andong-atlas/public/data/regions/area-6-6.json.gz  |  Bin 0 -> 174805 bytes
+ andong-atlas/public/data/regions/area-6-7.json     |    1 +
+ andong-atlas/public/data/regions/area-6-7.json.gz  |  Bin 0 -> 149097 bytes
+ andong-atlas/public/data/regions/area-6-8.json     |    1 +
+ andong-atlas/public/data/regions/area-6-8.json.gz  |  Bin 0 -> 128420 bytes
+ andong-atlas/public/data/regions/area-6-9.json     |    1 +
+ andong-atlas/public/data/regions/area-6-9.json.gz  |  Bin 0 -> 113361 bytes
+ andong-atlas/public/data/regions/area-7-10.json    |    1 +
+ andong-atlas/public/data/regions/area-7-10.json.gz |  Bin 0 -> 110490 bytes
+ andong-atlas/public/data/regions/area-7-11.json    |    1 +
+ andong-atlas/public/data/regions/area-7-11.json.gz |  Bin 0 -> 122092 bytes
+ andong-atlas/public/data/regions/area-7-2.json     |    1 +
+ andong-atlas/public/data/regions/area-7-2.json.gz  |  Bin 0 -> 107555 bytes
+ andong-atlas/public/data/regions/area-7-3.json     |    1 +
+ andong-atlas/public/data/regions/area-7-3.json.gz  |  Bin 0 -> 97349 bytes
+ andong-atlas/public/data/regions/area-7-4.json     |    1 +
+ andong-atlas/public/data/regions/area-7-4.json.gz  |  Bin 0 -> 95057 bytes
+ andong-atlas/public/data/regions/area-7-5.json     |    1 +
+ andong-atlas/public/data/regions/area-7-5.json.gz  |  Bin 0 -> 122207 bytes
+ andong-atlas/public/data/regions/area-7-6.json     |    1 +
+ andong-atlas/public/data/regions/area-7-6.json.gz  |  Bin 0 -> 133822 bytes
+ andong-atlas/public/data/regions/area-7-7.json     |    1 +
+ andong-atlas/public/data/regions/area-7-7.json.gz  |  Bin 0 -> 127960 bytes
+ andong-atlas/public/data/regions/area-7-8.json     |    1 +
+ andong-atlas/public/data/regions/area-7-8.json.gz  |  Bin 0 -> 113812 bytes
+ andong-atlas/public/data/regions/area-7-9.json     |    1 +
+ andong-atlas/public/data/regions/area-7-9.json.gz  |  Bin 0 -> 118948 bytes
+ andong-atlas/public/data/regions/area-8-0.json     |    1 +
+ andong-atlas/public/data/regions/area-8-0.json.gz  |  Bin 0 -> 97326 bytes
+ andong-atlas/public/data/regions/area-8-1.json     |    1 +
+ andong-atlas/public/data/regions/area-8-1.json.gz  |  Bin 0 -> 102357 bytes
+ andong-atlas/public/data/regions/area-8-10.json    |    1 +
+ andong-atlas/public/data/regions/area-8-10.json.gz |  Bin 0 -> 118203 bytes
+ andong-atlas/public/data/regions/area-8-11.json    |    1 +
+ andong-atlas/public/data/regions/area-8-11.json.gz |  Bin 0 -> 115010 bytes
+ andong-atlas/public/data/regions/area-8-2.json     |    1 +
+ andong-atlas/public/data/regions/area-8-2.json.gz  |  Bin 0 -> 105143 bytes
+ andong-atlas/public/data/regions/area-8-3.json     |    1 +
+ andong-atlas/public/data/regions/area-8-3.json.gz  |  Bin 0 -> 116480 bytes
+ andong-atlas/public/data/regions/area-8-4.json     |    1 +
+ andong-atlas/public/data/regions/area-8-4.json.gz  |  Bin 0 -> 105294 bytes
+ andong-atlas/public/data/regions/area-8-5.json     |    1 +
+ andong-atlas/public/data/regions/area-8-5.json.gz  |  Bin 0 -> 106785 bytes
+ andong-atlas/public/data/regions/area-8-6.json     |    1 +
+ andong-atlas/public/data/regions/area-8-6.json.gz  |  Bin 0 -> 116459 bytes
+ andong-atlas/public/data/regions/area-8-7.json     |    1 +
+ andong-atlas/public/data/regions/area-8-7.json.gz  |  Bin 0 -> 104204 bytes
+ andong-atlas/public/data/regions/area-8-8.json     |    1 +
+ andong-atlas/public/data/regions/area-8-8.json.gz  |  Bin 0 -> 119287 bytes
+ andong-atlas/public/data/regions/area-8-9.json     |    1 +
+ andong-atlas/public/data/regions/area-8-9.json.gz  |  Bin 0 -> 104011 bytes
+ andong-atlas/public/data/regions/area-9-0.json     |    1 +
+ andong-atlas/public/data/regions/area-9-0.json.gz  |  Bin 0 -> 115135 bytes
+ andong-atlas/public/data/regions/area-9-1.json     |    1 +
+ andong-atlas/public/data/regions/area-9-1.json.gz  |  Bin 0 -> 105757 bytes
+ andong-atlas/public/data/regions/area-9-10.json    |    1 +
+ andong-atlas/public/data/regions/area-9-10.json.gz |  Bin 0 -> 106231 bytes
+ andong-atlas/public/data/regions/area-9-2.json     |    1 +
+ andong-atlas/public/data/regions/area-9-2.json.gz  |  Bin 0 -> 115598 bytes
+ andong-atlas/public/data/regions/area-9-3.json     |    1 +
+ andong-atlas/public/data/regions/area-9-3.json.gz  |  Bin 0 -> 106218 bytes
+ andong-atlas/public/data/regions/area-9-4.json     |    1 +
+ andong-atlas/public/data/regions/area-9-4.json.gz  |  Bin 0 -> 93260 bytes
+ andong-atlas/public/data/regions/area-9-5.json     |    1 +
+ andong-atlas/public/data/regions/area-9-5.json.gz  |  Bin 0 -> 99356 bytes
+ andong-atlas/public/data/regions/area-9-6.json     |    1 +
+ andong-atlas/public/data/regions/area-9-6.json.gz  |  Bin 0 -> 94701 bytes
+ andong-atlas/public/data/regions/area-9-7.json     |    1 +
+ andong-atlas/public/data/regions/area-9-7.json.gz  |  Bin 0 -> 95725 bytes
+ andong-atlas/public/data/regions/area-9-8.json     |    1 +
+ andong-atlas/public/data/regions/area-9-8.json.gz  |  Bin 0 -> 96280 bytes
+ andong-atlas/public/data/regions/area-9-9.json     |    1 +
+ andong-atlas/public/data/regions/area-9-9.json.gz  |  Bin 0 -> 99793 bytes
+ andong-atlas/public/data/regions/bongjeong.json    |    1 +
+ andong-atlas/public/data/regions/bongjeong.json.gz |  Bin 0 -> 52516 bytes
+ andong-atlas/public/data/regions/byeongsan.json    |    1 +
+ andong-atlas/public/data/regions/byeongsan.json.gz |  Bin 0 -> 41341 bytes
+ andong-atlas/public/data/regions/dosan.json        |    1 +
+ andong-atlas/public/data/regions/dosan.json.gz     |  Bin 0 -> 47418 bytes
+ andong-atlas/public/data/regions/hahoe.json        |    1 +
+ andong-atlas/public/data/regions/hahoe.json.gz     |  Bin 0 -> 94360 bytes
+ andong-atlas/public/data/regions/station.json      |    1 +
+ andong-atlas/public/data/regions/station.json.gz   |  Bin 0 -> 273424 bytes
+ .../public/data/relay-document-photos.json         | 1826 ++++++++++++++++++++
+ andong-atlas/public/data/relay-materials.json      |  376 ++++
+ andong-atlas/public/data/relay-media.json          |  181 ++
+ andong-atlas/public/data/relay-model-assets.json   |   41 +
+ andong-atlas/public/data/relay-research.json       |  563 ++++++
+ andong-atlas/public/data/report-effects.json       |  376 ++++
+ andong-atlas/public/data/restaurant-info.json      |  492 ++++++
+ andong-atlas/public/data/solution.json             |    1 +
+ andong-atlas/public/data/terrain.json              |    1 +
+ andong-atlas/public/data/tourism-map.json          |    1 +
+ andong-atlas/public/data/transport.json            |    1 +
+ .../public/design-preview/atlas-design.css         |  265 +++
+ andong-atlas/public/design-preview/atlas-design.js |   80 +
+ andong-atlas/public/design-preview/index.html      |   16 +
+ .../public/design-preview/place-media-model.js     |   45 +
+ andong-atlas/public/design-preview/shell.js        |   63 +
+ andong-atlas/public/design-preview/variants.css    |   41 +
+ andong-atlas/public/favicon.svg                    |    1 +
+ andong-atlas/public/fonts/OFL-Pretendard.txt       |  104 ++
+ andong-atlas/public/fonts/PretendardVariable.woff2 |  Bin 0 -> 2057688 bytes
+ andong-atlas/public/media/relay/hahoe.jpg          |  Bin 0 -> 4891053 bytes
+ andong-atlas/public/media/relay/jjimdak.jpg        |  Bin 0 -> 882864 bytes
+ andong-atlas/public/media/relay/mask.jpg           |  Bin 0 -> 3055892 bytes
+ andong-atlas/public/media/relay/maskdance.jpg      |  Bin 0 -> 3698981 bytes
+ andong-atlas/public/media/relay/moon.jpg           |  Bin 0 -> 2281863 bytes
+ andong-atlas/public/media/relay/soju.jpg           |  Bin 0 -> 1352635 bytes
+ andong-atlas/public/media/relay/station.jpg        |  Bin 0 -> 3845339 bytes
+ andong-atlas/public/media/relay/tea.jpg            |  Bin 0 -> 77381 bytes
+ andong-atlas/scripts/collect-relay-atmosphere.py   |   27 +
+ andong-atlas/scripts/collect-relay-media.py        |   47 +
+ andong-atlas/scripts/collect-relay-realism.py      |   28 +
+ andong-atlas/scripts/compress-data.mjs             |   15 +
+ andong-atlas/scripts/export-report.py              |   23 +
+ andong-atlas/scripts/fetch-relay-materials.mjs     |   12 +
+ andong-atlas/scripts/import-gba.py                 |   33 +
+ andong-atlas/scripts/merge-buildings.py            |   32 +
+ andong-atlas/scripts/prepare-data.mjs              |  281 +++
+ andong-atlas/scripts/prepare-district-terrain.mjs  |   64 +
+ andong-atlas/scripts/prepare-district.py           |   30 +
+ andong-atlas/scripts/prepare-facilities.py         |   24 +
+ andong-atlas/scripts/prepare-heritage-media.py     |   20 +
+ andong-atlas/scripts/prepare-heritage.py           |   64 +
+ andong-atlas/scripts/prepare-journey.py            |  112 ++
+ andong-atlas/scripts/prepare-parks.py              |   18 +
+ andong-atlas/scripts/prepare-place-media.py        |   33 +
+ andong-atlas/scripts/prepare-regions.py            |  193 +++
+ .../scripts/prepare-relay-document-photos.py       |   19 +
+ andong-atlas/scripts/prepare-relay-research.py     |   30 +
+ andong-atlas/scripts/prepare-restaurant-info.py    |   48 +
+ andong-atlas/scripts/prepare-solution.py           |   28 +
+ andong-atlas/scripts/prepare-street-assets.py      |    6 +
+ andong-atlas/scripts/prepare-tourism-map.mjs       |   21 +
+ andong-atlas/scripts/prepare-transport.py          |   56 +
+ andong-atlas/scripts/prepare-water.py              |   12 +
+ andong-atlas/scripts/restaurant_identity.py        |   19 +
+ andong-atlas/server.mjs                            |   15 +
+ andong-atlas/src/activity.js                       |   54 +
+ andong-atlas/src/atlas-design.css                  |  265 +++
+ andong-atlas/src/atlas-design.js                   |   95 +
+ andong-atlas/src/atlas-home.css                    |   78 +
+ andong-atlas/src/bridge-model.js                   |  124 ++
+ andong-atlas/src/bridge-surface.js                 |   48 +
+ andong-atlas/src/building-geometry.js              |   98 ++
+ andong-atlas/src/building-style.js                 |   91 +
+ andong-atlas/src/city-detail.js                    |  206 +++
+ andong-atlas/src/district-scene.js                 | 1002 +++++++++++
+ andong-atlas/src/entry.js                          |   10 +
+ andong-atlas/src/footprints.js                     |  127 ++
+ andong-atlas/src/geo.js                            |  130 ++
+ andong-atlas/src/heritage-content.js               |   20 +
+ andong-atlas/src/heritage-explorer.css             |   44 +
+ andong-atlas/src/heritage-explorer.js              |  129 ++
+ andong-atlas/src/heritage-focus.js                 |   26 +
+ andong-atlas/src/heritage-geometry.js              |   93 +
+ andong-atlas/src/heritage-model.js                 |   32 +
+ andong-atlas/src/heritage-scene.js                 |   79 +
+ andong-atlas/src/heritage-tour.js                  |   77 +
+ andong-atlas/src/heritage-viewpoint.js             |   49 +
+ andong-atlas/src/heritage-visit.js                 |   19 +
+ andong-atlas/src/journey-clearance.js              |   60 +
+ andong-atlas/src/journey-model.js                  |  543 ++++++
+ andong-atlas/src/journey-position.js               |   35 +
+ andong-atlas/src/journey-scene.js                  |  643 +++++++
+ andong-atlas/src/journey-ui.js                     |  645 +++++++
+ andong-atlas/src/journey.css                       |  484 ++++++
+ andong-atlas/src/layout-modes.css                  |   99 ++
+ andong-atlas/src/layout-modes.js                   |   99 ++
+ andong-atlas/src/main.js                           |  720 ++++++++
+ andong-atlas/src/map-point-model.js                |   24 +
+ andong-atlas/src/map-points.css                    |   24 +
+ andong-atlas/src/map-points.js                     |   72 +
+ andong-atlas/src/map-water.js                      |   39 +
+ andong-atlas/src/overview-cutout.js                |   21 +
+ andong-atlas/src/parks.js                          |  254 +++
+ andong-atlas/src/place-media-model.js              |   45 +
+ andong-atlas/src/place-media-ui.js                 |  209 +++
+ andong-atlas/src/place-media.css                   |   78 +
+ andong-atlas/src/places.js                         |  117 ++
+ andong-atlas/src/popup-map-layer.js                |   22 +
+ andong-atlas/src/popup-map-overlay.js              |  117 ++
+ andong-atlas/src/railway-profile.js                |   58 +
+ andong-atlas/src/railway-structure.js              |   36 +
+ andong-atlas/src/railways.js                       |   65 +
+ andong-atlas/src/region-model.js                   |    9 +
+ andong-atlas/src/regional-details.js               |   60 +
+ andong-atlas/src/relay-activities.js               |   50 +
+ andong-atlas/src/relay-architecture.js             |   63 +
+ andong-atlas/src/relay-atmosphere.js               |  186 ++
+ andong-atlas/src/relay-audio.js                    |   50 +
+ andong-atlas/src/relay-bus.js                      |   73 +
+ andong-atlas/src/relay-checkout.js                 |   15 +
+ andong-atlas/src/relay-details.js                  |   84 +
+ andong-atlas/src/relay-dining-layout.js            |   16 +
+ andong-atlas/src/relay-dining.js                   |  155 ++
+ andong-atlas/src/relay-entry.css                   |   16 +
+ andong-atlas/src/relay-entry.js                    |   29 +
+ andong-atlas/src/relay-food.js                     |   91 +
+ andong-atlas/src/relay-hands.js                    |   29 +
+ andong-atlas/src/relay-hud.css                     |  164 ++
+ andong-atlas/src/relay-hud.js                      |   19 +
+ andong-atlas/src/relay-input.js                    |   56 +
+ andong-atlas/src/relay-journey-set.js              |   62 +
+ andong-atlas/src/relay-journey.js                  |   26 +
+ andong-atlas/src/relay-landing.css                 |  119 ++
+ andong-atlas/src/relay-life.js                     |   64 +
+ andong-atlas/src/relay-lighting.js                 |   25 +
+ andong-atlas/src/relay-locomotion.js               |   24 +
+ andong-atlas/src/relay-market.js                   |  179 ++
+ andong-atlas/src/relay-materials.js                |   15 +
+ andong-atlas/src/relay-meal.js                     |   69 +
+ andong-atlas/src/relay-model.js                    |  132 ++
+ andong-atlas/src/relay-navigation.js               |   32 +
+ andong-atlas/src/relay-passages.js                 |   14 +
+ andong-atlas/src/relay-payment.js                  |   64 +
+ andong-atlas/src/relay-people.js                   |   53 +
+ andong-atlas/src/relay-popup-layout.js             |   52 +
+ andong-atlas/src/relay-popup-map.js                |    5 +
+ andong-atlas/src/relay-popup-postcard.js           |   40 +
+ andong-atlas/src/relay-popup-visit.js              |   21 +
+ andong-atlas/src/relay-popup.js                    |  184 ++
+ andong-atlas/src/relay-primitives.js               |  118 ++
+ andong-atlas/src/relay-scan.js                     |   29 +
+ andong-atlas/src/relay-scanned-props.js            |   15 +
+ andong-atlas/src/relay-scene.js                    |  241 +++
+ andong-atlas/src/relay-sets.js                     |  140 ++
+ andong-atlas/src/relay-story.js                    |   52 +
+ andong-atlas/src/relay-task-model.js               |   20 +
+ andong-atlas/src/relay-tuho.js                     |   25 +
+ andong-atlas/src/relay-ui.js                       |  345 ++++
+ andong-atlas/src/relay-vegetation.js               |   45 +
+ andong-atlas/src/relay-vessels.js                  |    8 +
+ andong-atlas/src/relay-visit.js                    |   21 +
+ andong-atlas/src/relay-water.js                    |   95 +
+ andong-atlas/src/relay-workshop.js                 |   64 +
+ andong-atlas/src/relay.css                         |  139 ++
+ andong-atlas/src/report-effects.js                 |   26 +
+ andong-atlas/src/restaurant-info.js                |   18 +
+ andong-atlas/src/roadview.js                       |   60 +
+ andong-atlas/src/scenario-model.js                 |   16 +
+ andong-atlas/src/scene.js                          | 1030 +++++++++++
+ andong-atlas/src/select-ui.css                     |   30 +
+ andong-atlas/src/select-ui.js                      |  303 ++++
+ andong-atlas/src/solution-scene.js                 |  429 +++++
+ andong-atlas/src/solution-ui.js                    |  146 ++
+ andong-atlas/src/street-light-pools.js             |   22 +
+ andong-atlas/src/style.css                         | 1189 +++++++++++++
+ andong-atlas/src/terrain-display.js                |   82 +
+ andong-atlas/src/terrain-ribbon.js                 |   74 +
+ andong-atlas/src/tourism-layers.js                 |   78 +
+ andong-atlas/src/tourism-map-model.js              |   65 +
+ andong-atlas/src/tourism-map-ui.js                 |   97 ++
+ andong-atlas/src/tourism-map.css                   |   83 +
+ andong-atlas/src/traffic.js                        |  143 ++
+ andong-atlas/src/transit-cabin.js                  |  119 ++
+ andong-atlas/src/transit-people.js                 |   58 +
+ andong-atlas/src/transport-model.js                |   16 +
+ andong-atlas/src/transport-ui.js                   |   61 +
+ andong-atlas/src/vegetation.js                     |  102 ++
+ andong-atlas/src/visitor-info.css                  |   22 +
+ andong-atlas/tests/city-night-lighting.test.mjs    |   59 +
+ andong-atlas/tests/data.test.mjs                   |  741 ++++++++
+ andong-atlas/tests/exploration.test.mjs            |   64 +
+ andong-atlas/tests/heritage-viewpoint.test.mjs     |   72 +
+ andong-atlas/tests/heritage.test.mjs               |   67 +
+ andong-atlas/tests/journey.test.mjs                |  364 ++++
+ andong-atlas/tests/map-points.test.mjs             |   27 +
+ andong-atlas/tests/map-water-bridge.test.mjs       |   70 +
+ andong-atlas/tests/place-media.test.mjs            |   31 +
+ andong-atlas/tests/popup-map-layer.test.mjs        |   89 +
+ andong-atlas/tests/railway-grounding.test.mjs      |   72 +
+ andong-atlas/tests/regions.test.mjs                |   85 +
+ andong-atlas/tests/relay-assets.test.mjs           |   30 +
+ andong-atlas/tests/relay-audio.test.mjs            |   32 +
+ andong-atlas/tests/relay-dining.test.mjs           |   27 +
+ andong-atlas/tests/relay-entry.test.mjs            |   57 +
+ andong-atlas/tests/relay-geometry.test.mjs         |   23 +
+ andong-atlas/tests/relay-input.test.mjs            |   51 +
+ andong-atlas/tests/relay-journey.test.mjs          |   20 +
+ andong-atlas/tests/relay-life.test.mjs             |   73 +
+ andong-atlas/tests/relay-locomotion.test.mjs       |   34 +
+ andong-atlas/tests/relay-meal.test.mjs             |   51 +
+ andong-atlas/tests/relay-navigation.test.mjs       |    9 +
+ andong-atlas/tests/relay-passages.test.mjs         |   49 +
+ andong-atlas/tests/relay-payment.test.mjs          |   42 +
+ andong-atlas/tests/relay-popup.test.mjs            |   59 +
+ andong-atlas/tests/relay-postcard.test.mjs         |    7 +
+ andong-atlas/tests/relay-realism.test.mjs          |   56 +
+ andong-atlas/tests/relay-scenery.test.mjs          |   30 +
+ andong-atlas/tests/relay-story.test.mjs            |   25 +
+ andong-atlas/tests/relay-task.test.mjs             |   24 +
+ andong-atlas/tests/relay-water.test.mjs            |   46 +
+ .../tests/relay-workshop-interaction.test.mjs      |   46 +
+ andong-atlas/tests/relay.test.mjs                  |   15 +
+ andong-atlas/tests/tourism-map.test.mjs            |   53 +
+ andong-atlas/tests/transit-cabin.test.mjs          |   69 +
+ andong-atlas/tests/visitor-info.test.mjs           |   68 +
+ 708 files changed, 28715 insertions(+), 1 deletion(-)

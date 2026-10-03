@@ -1,0 +1,44 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "bytes": 19438,
+    "sha256Match": true
+  },
+  {
+    "path": "design-preview/index.html",
+    "status": 200,
+    "bytes": 504,
+    "sha256Match": true
+  },
+  {
+    "path": "assets/index-B3GGxC14.css",
+    "status": 200,
+    "bytes": 70923,
+    "sha256Match": true
+  },
+  {
+    "path": "assets/index-BYoYonZA.js",
+    "status": 200,
+    "bytes": 327682,
+    "sha256Match": true
+  },
+  {
+    "path": "assets/scene-63UOtJlV.js",
+    "status": 200,
+    "bytes": 462535,
+    "sha256Match": true
+  },
+  {
+    "path": "data/regions/hahoe.json",
+    "status": 200,
+    "bytes": 555586,
+    "sha256Match": true
+  },
+  {
+    "path": "data/regions/dosan.json",
+    "status": 200,
+    "bytes": 232446,
+    "sha256Match": true
+  }
+]

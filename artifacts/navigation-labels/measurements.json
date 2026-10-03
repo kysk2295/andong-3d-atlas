@@ -1,0 +1,294 @@
+[
+  {
+    "viewport": "509×734",
+    "mode": "photo",
+    "buttons": [
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 18,
+          "right": 173,
+          "top": 60,
+          "width": 155,
+          "x": 18,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 59.390625,
+          "right": 131.609375,
+          "top": 77,
+          "width": 72.21875,
+          "x": 59.390625,
+          "y": 77
+        },
+        "pressed": "false",
+        "text": "지도 탐색",
+        "underlineBottom": "auto",
+        "underlineHeight": "auto"
+      },
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 177,
+          "right": 332,
+          "top": 60,
+          "width": 155,
+          "x": 177,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 218.390625,
+          "right": 290.609375,
+          "top": 77,
+          "width": 72.21875,
+          "x": 218.390625,
+          "y": 77
+        },
+        "pressed": "false",
+        "text": "코스 여행",
+        "underlineBottom": "auto",
+        "underlineHeight": "auto"
+      },
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 336,
+          "right": 491,
+          "top": 60,
+          "width": 155,
+          "x": 336,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 377.5,
+          "right": 449.5,
+          "top": 77,
+          "width": 72,
+          "x": 377.5,
+          "y": 77
+        },
+        "pressed": "true",
+        "text": "사진 탐색",
+        "underlineBottom": "0px",
+        "underlineHeight": "3px"
+      }
+    ],
+    "nav": {
+      "bottom": 112,
+      "height": 52,
+      "left": 18,
+      "right": 491,
+      "top": 60,
+      "width": 473,
+      "x": 18,
+      "y": 60
+    }
+  },
+  {
+    "viewport": "509×734",
+    "mode": "atlas",
+    "buttons": [
+      {
+        "height": 52,
+        "pressed": "true",
+        "text": "지도 탐색"
+      },
+      {
+        "height": 52,
+        "pressed": "false",
+        "text": "코스 여행"
+      },
+      {
+        "height": 52,
+        "pressed": "false",
+        "text": "사진 탐색"
+      }
+    ]
+  },
+  {
+    "viewport": "509×734",
+    "mode": "journey",
+    "buttons": [
+      {
+        "height": 52,
+        "pressed": "false",
+        "text": "지도 탐색"
+      },
+      {
+        "height": 52,
+        "pressed": "true",
+        "text": "코스 여행"
+      },
+      {
+        "height": 52,
+        "pressed": "false",
+        "text": "사진 탐색"
+      }
+    ]
+  },
+  {
+    "viewport": "390×844",
+    "mode": "photo",
+    "buttons": [
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 18,
+          "right": 133.328125,
+          "top": 60,
+          "width": 115.328125,
+          "x": 18,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 39.546875,
+          "right": 111.765625,
+          "top": 77,
+          "width": 72.21875,
+          "x": 39.546875,
+          "y": 77
+        },
+        "pressed": "false",
+        "text": "지도 탐색",
+        "underlineBottom": "auto",
+        "underlineHeight": "auto"
+      },
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 137.328125,
+          "right": 252.671875,
+          "top": 60,
+          "width": 115.34375,
+          "x": 137.328125,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 158.890625,
+          "right": 231.109375,
+          "top": 77,
+          "width": 72.21875,
+          "x": 158.890625,
+          "y": 77
+        },
+        "pressed": "false",
+        "text": "코스 여행",
+        "underlineBottom": "auto",
+        "underlineHeight": "auto"
+      },
+      {
+        "box": {
+          "bottom": 112,
+          "height": 52,
+          "left": 256.671875,
+          "right": 372,
+          "top": 60,
+          "width": 115.328125,
+          "x": 256.671875,
+          "y": 60
+        },
+        "content": {
+          "bottom": 95,
+          "height": 18,
+          "left": 278.328125,
+          "right": 350.328125,
+          "top": 77,
+          "width": 72,
+          "x": 278.328125,
+          "y": 77
+        },
+        "pressed": "true",
+        "text": "사진 탐색",
+        "underlineBottom": "0px",
+        "underlineHeight": "3px"
+      }
+    ],
+    "nav": {
+      "bottom": 112,
+      "height": 52,
+      "left": 18,
+      "right": 372,
+      "top": 60,
+      "width": 354,
+      "x": 18,
+      "y": 60
+    }
+  },
+  {
+    "viewport": "1280×900",
+    "mode": "photo",
+    "buttons": [
+      {
+        "height": 71,
+        "pressed": "false",
+        "text": "지도 탐색"
+      },
+      {
+        "height": 71,
+        "pressed": "false",
+        "text": "코스 여행"
+      },
+      {
+        "height": 71,
+        "pressed": "true",
+        "text": "사진 탐색"
+      }
+    ],
+    "nav": {
+      "bottom": 71,
+      "height": 71,
+      "left": 196.6875,
+      "right": 546.21875,
+      "top": 0,
+      "width": 349.53125,
+      "x": 196.6875,
+      "y": 0
+    }
+  },
+  {
+    "viewport": "1280×900",
+    "mode": "atlas",
+    "buttons": [
+      {
+        "height": 34,
+        "pressed": "true",
+        "text": "지도 탐색"
+      },
+      {
+        "height": 34,
+        "pressed": "false",
+        "text": "코스 여행"
+      },
+      {
+        "height": 34,
+        "pressed": "false",
+        "text": "사진 탐색"
+      }
+    ],
+    "nav": {
+      "bottom": 232.5,
+      "height": 35,
+      "left": 37,
+      "right": 313,
+      "top": 197.5,
+      "width": 276,
+      "x": 37,
+      "y": 197.5
+    }
+  }
+]

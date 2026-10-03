@@ -1,0 +1,26 @@
+{
+  "deployment": "309002f4-d770-441f-ba40-e9af2587add1",
+  "status": 200,
+  "assets": [
+    {
+      "path": "/assets/index-CHbX3yD7.js",
+      "matches_local": true,
+      "sha256": "37e52abed3804f1ebf6437afb209f77833b32c00ddd132503b7d279e4dccc475"
+    },
+    {
+      "path": "/assets/preload-helper-BXl3LOEh.js",
+      "matches_local": true,
+      "sha256": "d887044e7c17fd90344fc4f74f53cac686584daf2a458ab2136d36f1946e9ab6"
+    },
+    {
+      "path": "/assets/relay-ui-D6bL9xcl.js",
+      "matches_local": true,
+      "sha256": "68236e2b3899cc8492753257aece04ecd577ed1b194e19c01195f6efdfc1da6f"
+    },
+    {
+      "path": "/assets/relay-ui-DpNigWkY.css",
+      "matches_local": true,
+      "sha256": "1faeeffa4dfe8481f7b35a1ee09c16475ef44be9449fed6fad68ee326fd4c42e"
+    }
+  ]
+}

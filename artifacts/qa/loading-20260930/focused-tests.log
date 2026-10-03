@@ -1,0 +1,17 @@
+✔ a request that never returns headers times out and aborts the underlying request (22.809708ms)
+✔ a response with a stalled body is bounded by the same deadline (26.371708ms)
+✔ gzip data, browser-decoded gzip and missing/corrupt gzip all resolve correctly (7.673209ms)
+✔ cancellation does not launch a fallback request and a later retry can succeed (5.878583ms)
+✔ optional art never blocks entry forever and can finish after entry (16.710375ms)
+✔ asset loading limits parallel decodes, reports progress and isolates failures (17.564208ms)
+✔ an already cancelled load never starts work (0.248209ms)
+✔ late high-resolution images replace placeholder GPU storage and update every live clone (1.757458ms)
+✔ production server compresses text, revalidates stable assets and preserves raw gzip URLs (36.929917ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 183.090666

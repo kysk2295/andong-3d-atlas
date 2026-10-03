@@ -1,0 +1,16 @@
+✔ direct popup play neither unlocks nor rewrites the main relay (6.525708ms)
+✔ popup restore only accepts its own bounded actions, never earlier checkpoints (0.891542ms)
+✔ all popup booths and the stage are reachable, while counters and the tuho pot block walking (63240.493417ms)
+✔ new popup activities restore independently and only tasting purchased edible items is accepted (2.333209ms)
+✔ site map uses walkable coordinates and preserves river north orientation (2.512333ms)
+✔ new activities survive the full relay save without granting or spending a second coupon (1.506292ms)
+✔ batching storefront scenery preserves world geometry beneath rotated parents (10.862375ms)
+✔ scenery batching retains transparent glass, moving steam, hidden props and interactive objects (75.577708ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 63847.066958

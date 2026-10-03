@@ -1,0 +1,12 @@
+{
+  "water": {
+    "changed": 13714,
+    "pixels": 14950,
+    "mean_delta": 3.1205797101449275
+  },
+  "bank": {
+    "changed": 0,
+    "pixels": 3600,
+    "mean_delta": 0.0
+  }
+}

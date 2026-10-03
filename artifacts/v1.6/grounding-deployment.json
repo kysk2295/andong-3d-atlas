@@ -1,0 +1,59 @@
+[
+  {
+    "id": "2b8c0ec0-a7b2-4677-9d4a-d544ba2be056",
+    "status": "SUCCESS",
+    "createdAt": "2026-09-28T23:26:41.582Z",
+    "meta": {
+      "buildOnly": false,
+      "cliAgentSessionId": "01a0e776-5183-7141-adb5-0d4eb93630ca",
+      "cliCaller": "codex",
+      "cliMessage": "v1.5.1: balanced heritage foundations and correct bridge arrival height",
+      "fileServiceManifest": {},
+      "imageDigest": "sha256:a46f429505b0fd809ae4488e05e837b581e38e13b2fc21838388c22a0a0a75dc",
+      "logsV2": true,
+      "nixpacksProviders": [],
+      "propertyFileMapping": {},
+      "reason": "deploy",
+      "rootDirectory": null,
+      "runtime": "V2",
+      "serviceManifest": {
+        "build": {
+          "buildCommand": null,
+          "buildEnvironment": "V3",
+          "builder": "DOCKERFILE",
+          "dockerfilePath": "/Dockerfile",
+          "nixpacksConfigPath": null,
+          "nixpacksPlan": null,
+          "watchPatterns": []
+        },
+        "deploy": {
+          "cronSchedule": null,
+          "drainingSeconds": null,
+          "healthcheckPath": null,
+          "healthcheckTimeout": null,
+          "ipv6EgressEnabled": false,
+          "limitOverride": null,
+          "multiRegionConfig": {
+            "europe-west4-drams3a": {
+              "numReplicas": 1
+            }
+          },
+          "numReplicas": 1,
+          "overlapSeconds": null,
+          "preDeployCommand": null,
+          "preDeployTimeoutSeconds": null,
+          "region": null,
+          "registryCredentials": null,
+          "requiredMountPath": null,
+          "restartPolicyMaxRetries": 10,
+          "restartPolicyType": "ON_FAILURE",
+          "runtime": "V2",
+          "sleepApplication": false,
+          "startCommand": null,
+          "useLegacyStacker": false
+        }
+      },
+      "volumeMounts": []
+    }
+  }
+]
